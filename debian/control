@@ -1,7 +1,7 @@
 Source: hildon-theme-layout-5
 Section: x11
 Priority: optional
-Maintainer: Daniel Borgmann  <danielb@openismus.com>
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
 Build-Depends: debhelper (>= 4.0.0), pkg-config, hildon-theme-tools (>= 0.6.0)
 Standards-Version: 3.6.0
 
