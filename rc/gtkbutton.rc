@@ -1,0 +1,513 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+# Normal Button text color
+style "hildon-button-label" = "osso-color-themeing" {
+	fg[NORMAL] = @ButtonTextColor
+	fg[PRELIGHT] = @ButtonTextColor
+	fg[ACTIVE] = @ButtonTextPressedColor
+	fg[SELECTED] = @ButtonTextPressedColor
+	fg[INSENSITIVE] = @ButtonTextDisabledColor
+	text[NORMAL] = @ButtonTextColor
+	text[PRELIGHT] = @ButtonTextColor
+	text[ACTIVE] = @ButtonTextPressedColor
+	text[SELECTED] = @ButtonTextPressedColor
+	text[INSENSITIVE] = @ButtonTextDisabledColor
+}
+widget_class "*.<GtkButton>.GtkAlignment.GtkHBox.GtkLabel" style "osso-ButtonFont"
+widget_class "*.<GtkButton>.GtkAlignment.GtkHBox.GtkVBox.GtkLabel" style "hildon-button-label"
+widget_class "*.<GtkButton>.GtkAlignment.GtkHBox.GtkHBox.GtkLabel" style "hildon-button-label"
+widget_class "*.<GtkButton>.GtkHBox.GtkLabel" style "hildon-button-label"
+widget_class "*.<GtkButton>.GtkLabel" style "hildon-button-label"
+
+# Special case for check buttons, which are a subclass of gtkbutton for some reason
+style "osso-checkbutton-text-color" = "osso-color-themeing" {
+	fg[NORMAL] = @DefaultTextColor
+	fg[PRELIGHT] = @DefaultTextColor
+	fg[ACTIVE] = @DefaultTextColor
+	fg[SELECTED] = @DefaultTextColor
+	fg[INSENSITIVE] = @DisabledTextColor
+	text[NORMAL] = @DefaultTextColor
+	text[PRELIGHT] = @DefaultTextColor
+	text[ACTIVE] = @DefaultTextColor
+	text[SELECTED] = @DefaultTextColor
+	text[INSENSITIVE] = @DisabledTextColor
+}
+widget_class "*.<GtkCheckButton>.GtkLabel" style "osso-checkbutton-text-color"
+
+style "fremantle-button-common" {
+	GtkButton::inner-border = {8, 8, 7, 8}
+	GtkButton::default-border = {0, 0, 0, 0}
+	GtkButton::image-spacing = 8
+}
+
+
+style "fremantle-stylus-button" = "fremantle-button-common" {
+	xthickness = 7
+	ythickness = 0
+	
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "buttondefault"
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/StylusButtonPressed.png"
+			border   = { 16, 16, 14, 14 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/StylusButtonDisabled.png"
+			border   = { 16, 16, 14, 14 }
+		}
+		image {
+			function = BOX
+			file     = "../images/StylusButtonNormal.png"
+			border   = { 16, 16, 14, 14 }
+		}
+	}
+}
+class "GtkButton" style "fremantle-stylus-button"
+widget "*Button-stylus" style "fremantle-stylus-button"
+
+# Accented version of stylus/scalable button
+style "fremantle-accent-button" = "fremantle-button-common" {
+	xthickness = 7
+	ythickness = 0
+	
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "buttondefault"
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/AccentedStylusButtonPressed.png"
+			border   = { 16, 16, 14, 14 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/AccentedStylusButtonDisabled.png"
+			border   = { 16, 16, 14, 14 }
+		}
+		image {
+			function = BOX
+			file     = "../images/AccentedStylusButtonNormal.png"
+			border   = { 16, 16, 14, 14 }
+		}
+	}
+}
+widget "*hildon-accent-button" style "fremantle-accent-button"
+
+style "fremantle-finger-button"  = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+	
+	HildonButton::vertical-spacing = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "buttondefault"
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/FingerButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/FingerButtonDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			file     = "../images/FingerButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*Button-finger" style "fremantle-finger-button"
+
+style "fremantle-thumb-button"  = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "buttondefault"
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/ThumbButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/ThumbButtonDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/ThumbButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*Button-thumb" style "fremantle-thumb-button"
+
+# Custom button size for portrait mode (90px).
+style "fremantle-portrait-button"  = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/PortraitButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/PortraitButtonDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/PortraitButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-portrait-button" style "fremantle-portrait-button"
+
+# Dialog Buttons
+style "fremantle-dialog-button"  = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "buttondefault"
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/DialogButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/DialogButtonDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			file     = "../images/DialogButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-dialog-action-area.GtkButton-finger" style "fremantle-dialog-button"
+
+# Accept and Reject buttons ("green" and "red")
+style "fremantle-accept-button-finger" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/AcceptFingerButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/AcceptFingerButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-accept-button-finger" style "fremantle-accept-button-finger"
+
+style "fremantle-accept-button-thumb" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/AcceptThumbButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/AcceptThumbButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-accept-button-thumb" style "fremantle-accept-button-thumb"
+
+style "fremantle-reject-button-finger" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/RejectFingerButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/RejectFingerButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-reject-button-finger" style "fremantle-reject-button-finger"
+
+style "fremantle-reject-button-thumb" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/RejectThumbButtonPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+			image {
+			function = BOX
+			file     = "../images/RejectThumbButtonNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.hildon-reject-button-thumb" style "fremantle-reject-button-thumb"
+
+# Custom buttons used by call UI.
+
+style "fremantle-landscape-dialpad-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallLandscapeDialButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallLandscapeDialButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-landscape-dialpad.GtkButton" style "fremantle-landscape-dialpad-button"
+widget "*.hildon-landscape-dialpad-button" style "fremantle-landscape-dialpad-button"
+
+style "fremantle-portrait-dialpad-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallPortraitDialButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallPortraitDialButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-portrait-dialpad.GtkButton" style "fremantle-portrait-dialpad-button"
+widget "*.hildon-portrait-dialpad-button" style "fremantle-portrait-dialpad-button"
+
+style "fremantle-dtmf-landscape-dialpad-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallDTMFLandscapeButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallDTMFLandscapeButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-dtmf-landscape-dialpad.GtkButton" style "fremantle-dtmf-landscape-dialpad-button"
+widget "*.hildon-dtmf-landscape-dialpad-button" style "fremantle-dtmf-landscape-dialpad-button"
+
+style "fremantle-dtmf-back-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallDTMFBackButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallDTMFBackButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-dtmf-back-button" style "fremantle-dtmf-back-button"
+
+style "fremantle-dtmf-portrait-dialpad-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallDTMFPortraitButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallDTMFPortraitButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-dtmf-portrait-dialpad.GtkButton" style "fremantle-dtmf-portrait-dialpad-button"
+widget "*.hildon-dtmf-portrait-dialpad-button" style "fremantle-dtmf-portrait-dialpad-button"
+
+style "fremantle-landscape-call-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallLandscapeCallButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallLandscapeCallButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-landscape-call-button" style "fremantle-landscape-call-button"
+
+style "fremantle-portrait-call-button" = "fremantle-button-common" {
+	xthickness = 5
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/CallPortraitCallButtonPressed.png"
+		}
+			image {
+			function = BOX
+			file     = "../images/CallPortraitCallButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-portrait-call-button" style "fremantle-portrait-call-button"
+
+
+# A button group matches all ToggleButtons inside an HBox, and they have to be finger sized!
+style "fremantle-button-group-box" {
+	GtkWidget::maemo-position-theming = 1
+}
+class "GtkHBox" style "fremantle-button-group-box"
+
+style "fremantle-button-group" {
+	engine "sapwood" {
+		image {
+			function = BOX
+			position = LEFT, TOP, BOTTOM
+			state    = INSENSITIVE
+			file     = "../images/ButtonGroupHorizontalLeftDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			position = LEFT, TOP, BOTTOM
+			shadow   = IN
+			file     = "../images/ButtonGroupHorizontalLeftPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			position = LEFT, TOP, BOTTOM
+			file     = "../images/ButtonGroupHorizontalLeftNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		
+		image {
+			function = BOX
+			position = RIGHT, TOP, BOTTOM
+			state    = INSENSITIVE
+			file     = "../images/ButtonGroupHorizontalRightDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			position = RIGHT, TOP, BOTTOM
+			shadow   = IN
+			file     = "../images/ButtonGroupHorizontalRightPressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			position = RIGHT, TOP, BOTTOM
+			file     = "../images/ButtonGroupHorizontalRightNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		
+		image {
+			function = BOX
+			state    = INSENSITIVE
+			file     = "../images/ButtonGroupHorizontalMiddleDisabled.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			shadow   = IN
+			file     = "../images/ButtonGroupHorizontalMiddlePressed.png"
+			border   = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			file     = "../images/ButtonGroupHorizontalMiddleNormal.png"
+			border   = { 16, 16, 0, 0 }
+		}
+	}
+}
+widget "*.GtkHBox.GtkToggleButton-finger" style "fremantle-button-group"
+widget "*.GtkHBox.GtkRadioButton-finger" style "fremantle-button-group"
+widget "*.GtkHBox.GtkCheckButton-finger" style "fremantle-button-group"
+

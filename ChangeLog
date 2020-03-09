@@ -1,0 +1,1625 @@
+2010-01-29  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.15.0-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-11-18  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.14.0-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-11-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: 
+	* rc/gtktoolbar.rc:
+
+	Add edit mode toolbar button. See NB#144793.
+
+2009-11-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add graphics for new virtual keyboard layout.
+	* rc/Makefile.am: Don't create gtkrc.input_method anymore.
+	* rc/gtkrc.rc: Don't include hildonkeyboard.rc
+
+2009-10-09  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.13.2-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-10-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Disable mnemonics globally. Fixes: NB#137179.
+
+2009-10-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Add gtk-icon-theme-name to GtkRC. Fixes: NB#137471.
+
+2009-10-06  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.13.1-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-10-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Split RSS widget into three parts, see NB#141916.
+
+2009-09-15  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.13.0-1 release]
+
+	* rc/gtkframe.rc: Update group title style.
+	* data/layout.txt: Add Ovi widget coordinates, updated RSS widget
+	coordinates. See: NB#125660. Fixes: NB#126430.
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+22009-09-14  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.12.4-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: updates.
+
+009-09-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add wmMenuIndicator.png. See: NB#137793.
+
+2009-09-02  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.12.3-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+
+2009-09-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkscale.rc: Add rules for portrait mode unlock slider. See:
+	NB#136719.
+
+2009-08-18  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.12.2-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-08-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: 
+	* rc/themespecificgtk.rc: 
+
+	Add AlphaKeyColor. Fixes: NB#133451.
+
+2009-08-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Reduce width of TouchListBackground graphics.
+	Fixes: NB#130150.
+
+2009-07-30  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.12.1-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-07-30  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc:
+	* rc/gtktreeview.rc:
+
+	Remove shadows from list- and button-labels. Fixes: NB#129233.
+
+2009-07-29  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.12.0-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-07-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Correct calendar dimensions.
+
+2009-07-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Adjust Calendar applet coordinates and
+	surroundings.
+
+2009-07-23  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.11.1-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-07-22  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/afterincludes.rc:
+	* rc/themespecificgtk.rc:
+
+	Add HomeSystemFont. Fixes: NB#129004.
+
+2009-07-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css: Use correct CSS naming for fonts. Fixes: NB#116748.
+	* rc/gtklabel.rc: Make group titles bold. Fixes: NB#108333.
+
+2009-07-09  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.11.0-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-07-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Modified Calendar and Map widget coordinates, cut
+	extra piece from Call UI text input field. See NB#124345, NB#124746,
+	and NB#126026.
+
+2009-06-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css: Add messaging view background color.
+
+2009-06-18  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.20-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-06-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add application shortcut applet.
+	* rc/gtkbutton.rc: Tweak borders for stylus buttons.
+	* rc/gtkiconview.rc: Specifically match control panel iconview as a
+	workaround.
+
+2009-06-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkbutton.rc:
+
+	Add accented button. Fixes: NB#122803.
+
+2009-06-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/hildonnote.rc:
+
+	Add new coordinates for portrait mode banners. Fixes: NB#118401.
+
+2009-06-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/Makefile.am:
+	* rc/base.rc:
+	* rc/gtkcheckbutton.rc:
+	* rc/gtkcombobox.rc:
+	* rc/gtkfilechooserbutton.rc:
+	* rc/gtkiconview.rc:
+	* rc/gtklabel.rc:
+	* rc/gtkrc.maemo_af_desktop.rc:
+	* rc/gtkrc.rc:
+	* rc/gtktreeview.rc:
+	* rc/hildonbanners.rc:
+	* rc/hildoncalendar.rc:
+	* rc/hildoncontrolbar.rc:
+	* rc/hildondateeditor.rc:
+	* rc/hildondesktop.rc:
+	* rc/hildonnavigatorpopuplist.rc:
+	* rc/hildonnote.rc:
+	* rc/hildontimeeditor.rc:
+	* rc/hildontimepicker.rc:
+	* rc/ossoaddressbook.rc:
+	* rc/ossoclock.rc:
+	* rc/ossoglobalsearch.rc:
+	* rc/ossortc.rc:
+	* rc/themespecificgtk.rc:
+
+	Cleanup and optimisations. Fixes: NB#118090.
+
+	* rc/gtkframe.rc: Fix a matching error for hildon windows. Fixes:
+	NB#116259.
+
+2009-06-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtktreeview.rc:
+
+	No special themeing for treeview sides anymore. Fixes: NB#118364.
+
+2009-06-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Taskswitcher updates. Fixes: NB#123202.
+
+2009-06-11  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.19-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-06-11  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkscale.rc:
+
+	New lock slider stuff.
+
+2009-06-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkcombobox.rc:
+	* rc/gtkentry.rc:
+	* rc/gtktextview.rc:
+
+	Improve TextView spacings, add hildon-readonly-textview, add baselines
+	to hildon-fullscreen-textview. Fixes: NB#119284.
+
+2009-06-08  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.18-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+	* debian/control: Update dependencies.
+
+2009-06-08  Daniel Borgmann  <danielb@openismus.com>
+
+	* debian/control: Update dependency on hildon-theme-tools.
+
+2009-06-04  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkrc.input_method.rc: New file, custom gtkrc for input methods.
+
+2009-06-04  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Better border margins to improve dithering.
+
+2009-06-01  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/afterincludes.rc: Actually use new font definitions, remove
+	wildcards. Fixes: NB#119085.
+
+2009-05-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktreeview.rc: Remove wildcard matching.
+
+	* rc/hildonkeyboard.rc:
+	* rc/themespecificgtk.rc:
+
+	Remove unused font colors.
+
+2009-05-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Simplifications and performance tweaks.
+
+2009-05-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenuitem.rc:
+	* rc/gtkseparator.rc:
+
+	Adjust separator size and borders to fix scaling issues.
+
+2009-05-25  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/afterthemespecificgtk.rc: Actually use ReversedSelectionColor.
+	Fixes: NB#118147.
+
+2009-05-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/Makefile.am:
+	* data/colors.config:
+
+	Create colors.config.
+
+	* data/layout.txt: Also export wmProgressIndicator in eight different
+	pieces.
+
+2009-05-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkframe.rc: Add matching for framed windows.
+
+2009-05-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Fix a typo.
+
+2009-05-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css:
+	* data/layout.txt:
+	* rc/themespecificgtk.rc:
+	
+	Add notification colors.
+
+2009-05-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Update incoming event to newest spec.
+
+2009-05-14  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css:
+	* rc/themespecificgtk.rc:
+
+	Add three new font sizes (X-LargeSystemFont to XXX-LargeSystemFont).
+
+2009-05-11  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.17-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-05-11  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add wmDialogCenter.png for matchbox1.
+	* data/theme-matchbox1.xml: Update dialog style to match
+	hildon-desktop.
+
+2009-05-08  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme-matchbox1.xml: Use TitleTextColor instead of
+	DefaultTextColor.
+	* rc/gtktreeview.rc: Match touch selector cells more specifically to
+	avoid background themeing. Fixes: NB#110837.
+
+2009-05-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenu.rc: Set horizontal padding to HILDON_MARGIN_DOUBLE to
+	line up with title text (once legacy app menus are positions
+	correctly, see NB#111652).
+
+2009-05-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Set gtk-double-click-time and -distance. Fixes:
+	NB#113353.
+
+2009-04-30  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.15-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-04-30  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Tweak vertical button spacing. Fixes: NB#114019.
+
+2009-04-29  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenuitem.rc: Match GtkImageMenuItem. Fixes: NB#113698.
+
+2009-04-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcombobox.rc: Also match browser combobox entry with old box
+	themeing rule. Fixes: NB#103340.
+
+2009-04-24  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.14-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-04-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Cut rounded selection with smaller borders.
+	* rc/gtkiconview.rc: Update border values.
+	* rc/gtkmenuitem.rc: Update border values.
+	* rc/gtkscrolledwindow.rc: Use better window frames. Fixes: NB#110881.
+
+2009-04-23  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Remove deprecated edittoolbar background.
+
+2009-04-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Update matching rule to use button box naming.
+
+2009-04-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: New notification stuff.
+	* rc/gtkbutton.rc: Add special dialog buttons.
+	* rc/gtkdialog.rc: Prepare for fixed dialog code.
+	* rc/hildonnote.rc: Properly theme confirmation notes created with
+	new_confirmation_add_buttons().
+
+2009-04-20  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkscale.rc: Adjusted border values.
+	* rc/hildonnote.rc: Theme all Hildon Banners. Fixes: NB#111208.
+
+2009-04-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add custom Lock slider. Fixes: NB#111539.
+	* rc/gtkscale.rc: Themeing rules for Lock slider.
+
+2009-04-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Fix some call-ui dimensions. Fixes: NB#109181.
+	* rc/gtkbutton.rc: Add alternate matching rules for call button.
+
+2009-04-08  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkiconview.rc: Use RoundedSelection graphic for Icon View
+	highlights.
+	* rc/gtklabel.rc: Add text shadow to menu labels.
+	* rc/gtkmenu.rc: 
+	* rc/gtkmenuitem.rc: Improved margins, use RoundedSelection highlight.
+
+2009-04-08  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.13-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-04-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css: Add .MessagingAvatarBorderMaskColor. Fixes:
+	NB#110148.
+
+2009-04-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkbutton.rc:
+	* rc/gtktextview.rc:
+	* rc/hildonnote.rc:
+	* rc/hildonwindow.rc:
+
+	Call-UI additions. Fixes: NB#109181.
+
+2009-04-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcombobox.rc: Match browser combobox entry by setting Entry
+	widget name.
+
+2009-04-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add more call-UI specific coordinates and
+	accept/reject buttons.
+
+2009-04-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: User ButtonPressedColor again, leaving it up to
+	theme designers to take the shadow into account.
+
+2009-04-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Cut disabled checkmarks.
+	* rc/gtkcheckbutton.rc: Use disabled state for HildonCheckButton
+	checkmarks. Fixes: NB#95718.
+
+2009-04-02  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.12-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-04-01  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Make that THEME_NAME, as THEME_DIR was breaking the
+	theme.
+
+2009-04-01  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Add gtk-theme-name with THEME_DIR substitution. Fixes:
+	NB#93010.
+
+2009-03-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Remove deprecated WindowManagerStuff.png again.
+
+2009-03-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add white sparkle coordinates. See bug #94184.
+
+2009-03-27  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.11-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-03-26  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add group title coordinates.
+	* rc/gtkframe.rc: Group title themeing.
+
+2009-03-25  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/Makefile.am: Add gtklabel.rc.
+	* rc/gtklabel.rc: Theme shadow labels (hildon-shadow-label and
+	hildon-shadow-label-reversed).
+	* rc/gtkrc.rc: Include gtklabel.rc.
+
+2009-03-25  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkseparator.rc: Particularly match edit toolbar separator, use
+	standard graphic for other separators.
+
+2009-03-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add calendar/contact active states coordinates,
+	adjusted some applet coordinates.
+
+2009-03-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add icon highlight coordinates.
+
+2009-03-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Added call ui coordinates.
+
+2009-03-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcheckbutton.rc: Match subclasses too.
+
+2009-03-23  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Tweak button spacings.
+	* rc/gtktoolbar.rc: Add edit toolbar themeing in case it gets added.
+
+2009-03-20  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.10-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-03-20  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Cut coordinates for view menu (no top frame).
+	* rc/hildonwindow.rc: Use new view menu image.
+
+2009-03-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css: Update font size definitions. Fixes: NB#94101
+
+2009-03-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/colors.css: Add messaging UI specific colours.
+
+2009-03-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcheckbutton.rc:
+	* rc/gtkcombobox.rc:
+	* rc/gtkseparator.rc:
+
+	Don't use pixmap engine anymore. Fixes: NB#101788
+
+2009-03-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcombobox.rc: New, much cleaner method to implement browser UI
+	combobox.
+
+2009-03-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add disabled state for browser UI combobox.
+	* debian/changelog: Fix typo.
+	* rc/gtkcombobox.rc: Updates.
+
+2009-03-17  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.9-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-03-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add WindowManagerStuff.png back for now until
+	issues in hildon desktop are fixed.
+
+2009-03-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonwindow.rc: Match HDStatusMenu to new view menu themeing.
+
+2009-03-16  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.8-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+	* rc/gtkentry.rc: Use ReversedDisabledTextColor for disabled entries.
+
+2009-03-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Disabled cursor blinking. Fixes: NB#105901
+
+2009-03-13  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Coordinates for bidirectional sliders.
+	* rc/gtkscale.rc: Themeing rules for bidirectional sliders.
+
+2009-03-13  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkprogressbar.rc: Add custom themeing rule for widgets named
+	"small-progress-bar".
+
+2009-03-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Added new taskswitcher coordinates, removed
+	deprecated WindowManagerStuff.png.
+
+2009-03-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: Custom themeing for fullscreen textview (SMS
+	view). Fixes: NB#105627
+
+2009-03-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenuitem.rc: Add more matching rules for finger-sized menu
+	items.
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.7-1 release]
+
+	* debian/changelog: Updates.
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc:
+	* rc/gtktreeview.rc:
+	* rc/hildonnote.rc:
+
+	Use logical colours for text shadows (using reversed text colour).
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme.xml: Set dialog titlebar height to 48px as per the new
+	specs.
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonwindow.rc: Also set horizontal spacing to 0. Fixes:
+	NB#104376
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Coordinates for browser ui combobox parts.
+	* rc/gtkcheckbutton.rc: Fix a border warning.
+	* rc/gtkcombobox.rc: Partial implementation of browser ui combobox
+	themeing.
+	* rc/hildonwindow.rc: Add background image for HildonAppMenu, fix
+	vertical spacing.
+
+2009-03-06  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add coordinates for insensitive SCV buttons and
+	browser ui combobox.
+	* rc/hildonkeyboard.rc: s/Disable/Disabled
+
+2009-03-06  Richard Sun  <richard.sun@nokia.com>
+
+	* rc/hildonkeyboard.rc: 
+	- update HWK SCV button with proper image name.
+	- Fixes: NB#104142
+
+2009-03-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add SCV button graphics.
+	* rc/base.rc: Patch by Mox Soini to set correct icon size for legacy
+	toolbars. Fixes: NB#102881
+
+2009-03-02  Richard Sun  <richard.sun@nokia.com>
+
+	* rc/hildonkeyboard.rc: 
+	- update hardware special character view icons
+	- remove boarder for Tab icon which should have explicite size 110x72
+	pixels
+
+2009-03-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: Adjust focus line width. Fixes: NB#103626
+
+2009-02-27  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.6-1 release]
+
+	* debian/changelog: Updates.
+
+2009-02-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Reduce center tiling piece of legacy button back to
+	one pixel. This won't support dithering.
+
+2009-02-26  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkcombobox.rc:
+	* rc/gtkrc.rc:
+
+	Better legacy combobox themeing. Fixes: NB#103259
+
+2009-02-25  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add tutorial applet.
+	* rc/gtkbutton.rc: Fix engine...
+
+2009-02-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonbanners.rc: Remove content, merged with hildonnote.rc
+	* rc/hildonnote.rc: Implement information note, banner, and
+	confirmation note theming. Fixes: NB#98597
+
+2009-02-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonkeyboard.rc: Patch by Richard Sun. Fixes: NB#101515,
+	NB#90598
+
+2009-02-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* configure.ac:
+	* debian/changelog:
+	* debian/control:
+
+	Post-release version bump, maintainer update.
+
+	* rc/gtkbutton.rc: Tweak borders and match more widgets for button
+	boxes. Fixes: NB#98144
+
+2009-02-23  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.4-1 release]
+
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-02-20  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/Makefile.am:
+	* data/startup-ui-color.config:
+
+	Add SUW color config file.
+
+2009-02-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Update notebook tab coordinates.
+	* rc/gtkbutton.rc: Tweak image spacing.
+	* rc/gtknotebook.rc: Fix scaling issues.
+
+2009-02-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Remove small close icon, add applet close and
+	configure button.
+
+2009-02-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Fix a typo.
+
+	* rc/gtkcheckbutton.rc:
+	* rc/gtkradiobutton.rc:
+
+	Simplify and remove active state. Fixes: NB#100739 
+
+2009-02-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Cut left and right half pieces of titlebar buttons
+	for custom buttons.
+
+2009-02-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/Makefile.am:
+	* data/colors.css:
+	* data/fonts.css:
+
+	Merge fonts into colors.css.
+	
+	* rc/hildondesktop.rc:
+
+	Don't set pixmap for taskswitcher thumbnail for now.
+
+2009-02-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc:
+	* rc/gtktextview.rc:
+
+	Reduce inside borders, hopefully fixes NB#100378.
+
+2009-02-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/hildonbanners.rc:
+	* rc/hildonnote.rc:
+
+	Add information-banner and -note rules.
+
+2009-02-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Reduce border values for better tiling.
+	* rc/gtkcheckbutton.rc: Remove active state.
+	* rc/gtkradiobutton.rc: Remove active state.
+	* rc/gtkseparator.rc: Support new vertical (titlebar) separator.
+	* rc/gtktoolbar.rc: Edit toolbar adjustments.
+	* rc/hildonwindow.rc: Edit toolbar adjustments.
+
+2009-02-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* configure.ac:
+	* debian/changelog:
+
+	Post-release version bump.
+
+2009-02-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add small close button (for thumbnails).
+
+2009-02-10  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.3-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2009-02-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add separate titlebar for taskswitcher thumbnails.
+
+2009-02-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Update of home applet dimensions.
+
+2009-02-04  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt:
+	* rc/gtkscale.rc:
+
+	Cut slider into smaller pieces to avoid expensive downscaling.
+
+2009-02-04  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktreeview.rc: Fix row height to match spec and so images don't
+	get scaled any more.
+
+2009-02-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktoolbar.rc: Add special theming for the hildon-edit-toolbar back
+	button.
+	* rc/gtktreeview.rc: Remove focus indicator. Fixes NB#94642
+
+2009-01-29  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkscale.rc: Fix some border values.
+
+2009-01-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Updates.
+	* data/theme.xml: Make it work with the new style graphics as a
+	temporary solution.
+	* rc/gtkscale.rc: Attempting to fix insensitive borders, not working
+	yet.
+	* rc/hildonkeyboard.rc: Removed more unused stuff. 
+
+2009-01-26  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonkeyboard.rc: Removed some (hopefully :)) unused stuff.
+
+2009-01-23  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme-matchbox1.xml: Update to use new image filename.
+
+2009-01-22  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/Makefile.am:
+	* data/fonts.css: added fonts.css for hildon font def's in css.
+
+2009-01-22  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added map applet gfx
+
+2009-01-22  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Updated title area coordinates again, added alpha
+	bg buttons.
+
+2009-01-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Update title area locations.
+
+2009-01-21  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added calendar, mediaplayer applet gfx.
+
+2009-01-21  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Removed some cruft that was overlooked.
+
+2009-01-20  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Removed some cruft.
+
+2009-01-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkprogressbar.rc: Fix some wrong border values.
+	* rc/gtkscale.rc: Fix an oversight.
+
+2009-01-15  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildoncontrolbar.rc: Fix a visual glitch.
+
+2009-01-15  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme-matchbox1.xml: Updates.
+	* rc/gtkscale.rc: Support vertical scale.
+
+2009-01-14  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkdialog.rc: Adjust border spacings.
+	* rc/hildonnote.rc: Adjust border spacings.
+
+2009-01-14  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Updates.
+	* rc/gtkprogressbar.rc: Change widget size to 70px (image remains
+	small).
+
+2009-01-09  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/Makefile.am, data/theme-matchbox1.xml: added matchbox1
+	theme to layout.
+
+2009-01-05  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add placeholder for progress indicator.
+
+2008-12-19  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add rounded selection.
+
+2008-12-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Fix typo...
+
+2008-12-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Fix default button garbage.
+
+2008-12-16  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.2-1 release]
+	
+	* configure.ac: Bump version number.
+	* debian/changelog: Updates.
+
+2008-12-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Remove unused checkmark states.
+	* rc/gtkcheckbutton.rc: Updates, use pixmap engine to enable alpha blending.
+
+2008-12-15  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add web shortcut background.
+	* rc/gtkcheckbutton.rc: Support new checkbox-size property in
+	HildonCheckButton and remove focused state from GtkCheckButton.
+
+2008-12-15  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* rc/hildonkeyboard.rc: revised text colors
+	* data/layout.txt: fixed typos (missing .png's), removed old crap.
+
+2008-12-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcheckbutton.rc: Add new check mark image.
+
+2008-12-12  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: Fix warnings.
+
+2008-12-11  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/layout.txt: Add individual export for window manager elements.
+
+2008-12-10  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonwindow.rc: Remove toolbar padding.
+
+2008-12-10  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/hildonwindow.rc:
+
+2008-12-10  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: Fix typo.
+
+2008-12-09  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: touch check button checkmark gfx	
+
+2008-12-09  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.1-1 release]
+
+	* configure.ac: bump version number
+	* debian/changelog: updates
+
+2008-12-09  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc: Add progress graphic.
+
+2008-12-09  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added entry progress indicator graphic	
+
+2008-12-08  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Make text shadow pitch black again.
+	* rc/gtktreeview.rc: Add text shadow.
+
+2008-12-08  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Fix disabled checkbutton colour. Fixes: #NB92888.
+
+2008-12-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkdialog.rc: Improve dialog spacings.
+
+2008-12-03  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme.xml: Remove borders from dialog.
+
+2008-12-03  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: fixed typo in window manager graphic, it should
+	be 2 pixels taller.
+
+2008-12-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: Unbreak legacy textview.
+
+2008-12-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktextview.rc: New border theming for HildonTextView.
+
+2008-12-02  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/theme.xml: Fixed dialog framing, added style for confirmation
+	note frames, fixed swapped close button normal/active states.
+
+2008-12-01  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc: Add state-hint again.
+
+2008-12-01  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkprogressbar.rc: Use new Gtk properties to set correct size.
+	Fixes: NB#88817
+
+2008-11-28  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: removed the old volumebar / scale graphics
+	since we now have new graphics that all scales use.
+
+2008-11-28  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Remove value label colour theming, because it's
+	done in hildon-widgets now.
+
+2008-11-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkscale.rc: Updates (fixes and new mute buttons)
+	* rc/hildoncontrolbar.rc: New control bar style.
+
+2008-11-27  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Added volume button "icons"
+
+2008-11-27  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Revised control bar widget graphics, much
+	simplified now. Larger too. Removed old controlbar gfx.
+
+2008-11-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: More reliable way to add text shadow to button
+	labels.
+
+2008-11-27  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Fix picker button shadow.
+
+2008-11-26  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme.xml: Remove unneeded lines.
+	* rc/Makefile.am: Updated.
+	* rc/gtkbutton.rc: Better pickerbutton value matching. (Thanks Mox)
+	* rc/gtkrc.rc: Remove unused RCs.
+	* rc/gtkscale.rc: New styling, move deprecated scale widgets here.
+	* rc/hildonseekbar.rc: Removed.
+	* rc/hildonvolumebar.rc: Removed.
+
+2008-11-25  Tuomas Kuosmanen  <tuomas.kuosmane@nokia.com>
+
+	* data/layout.txt: added vertical seekbar and disabled seekbars.
+	* data/theme.xml: corrected titlebar coordinates
+
+2008-11-24  Thomas Thurman  <thomas.thurman@collabora.co.uk>
+
+        * data/theme.xml: switch active and inactive versions of close button,
+	  and add them for back button.
+
+2008-11-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc: Commented out style-hint property until new Gtk can
+	be integrated.
+
+2008-11-21  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.10.0-1 release]
+
+	* configure.ac: bumb version
+	* debian/changelog: updates
+
+2008-11-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Tweaked shadow on buttons.
+	* rc/gtkentry.rc: Add style-hint property.
+
+2008-11-20  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added rounded rectangle with selection color for
+	tag cloud and other similar cases
+
+2008-11-18  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Put all matchbox2 images into one compacted
+	800x222 image instead of separate files, to meet wm theme req's.
+
+2008-11-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Improve inside padding.
+
+2008-11-18  Daniel Borgmann  <danielb@openismus.com>
+
+	* data/theme.xml: Changes for new theme.
+
+2008-11-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Try text shadow on buttons.
+
+2008-11-17  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/base.rc: Add pixmap_path. Fixes: NB#91956
+
+2008-11-12  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/colors.css: Added closing comment for header
+	description. D'oh. Fixes: NB#92421.
+
+2008-11-11  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktreeview.rc: Don't override selected text colour.
+
+2008-11-10  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Made the bubble taller for contacts applet,
+	forgot that maemo fonts have higher dpi than desktop linux's
+	inkscape.. duh :-)
+
+2008-11-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkfilechooserbutton.rc:
+	* rc/gtktextview.rc:
+	* rc/hildondateeditor.rc:
+	* rc/hildontimeeditor.rc: Fix wrong border values (warnings)
+
+2008-11-07  Daniel Borgmann  <danielb@openismus.com>
+
+	[0.9.0-1 release]
+
+	* configure.ac: bump version
+	* debian/changelog: updates
+
+2008-11-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkiconview.rc:
+	* rc/gtktreeview.rc: Match subclasses too
+
+2008-11-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/Makefile.am:
+	* rc/gtkrc.rc:
+	* rc/hildondesktop.rc: Add hildon desktop specific theming
+
+2008-11-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkiconview.rc: Set hildon-mode to HILDON_FREMANTLE for iconviews
+	in pannable areas. Fixes: NB#91954
+
+2008-11-05  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtktreeview.rc: New multi-column touchlist style
+
+2008-11-05  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Resized contact applet's avatar mask to 96x96,
+	added "status bubble" graphic, and moved the bunch a bit to make
+	better use of the template space.
+
+2008-11-04  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* rc/themespecificgtk.rc: Small system fonts for fremantle are 13
+	pixels tall, not 13.5. Fixes: NB#89745
+
+	* data/layout.txt: 
+
+	- Added contacts applet frame and mask for
+	avatars: 112x141px. Status bubble is still to be added.
+
+	- Also added the Start/Middle/End graphics for TouchList rows - they 
+	are being cut from the same graphics as the "single column" version,
+	so no theme changes are required.
+
+2008-10-31  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.8.0-1 release]
+
+	* configure.ac: bump version
+	* debian/changelog: updates
+
+2008-10-31  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: SecondaryText for hildon button values, ActiveText
+	for hildon picker button values.
+
+2008-10-31  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Use different colours for gtkcheckbutton labels
+	than gtkbutton labels
+
+2008-10-31  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcombobox.rc: Use logical colour, minor tweaks
+
+2008-10-31  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt, rc/themespecificgtk.rc: Added a hidden logical
+	color as a hack to colorize the combobox background (cannot be
+	painted as bitmap, unfortunately) - this is a compromise/hack
+	since none of the real logical colors would have worked for this
+	purpose.
+
+2008-10-30  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc: Update small text entry
+
+2008-10-30  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: small text entry is themed similarly to the
+	large one. Also combobox fixes again, trying to nail it down...
+
+2008-10-30  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkbutton.rc: Added togglebutton(group) styling
+	* rc/gtkentry.rc: Updated text entry style to make the widget 
+	work better with overflowing input content that doesn't fit.
+	* rc/Makefile.am:
+	* rc/gtkrc.rc:
+	* rc/gtkscale.rc: Added RC file for scales (not properly used yet)
+
+2008-10-30  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Updated text entry graphics coordinates to make
+	the widget work better with overflowing input content that doesnt
+	fit.
+
+2008-10-29  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* rc/afterincludes.rc: added the style rules for the new 
+	font definitions too.
+
+2008-10-28  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Added small progressbar and seekbar graphics
+
+2008-10-24  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/Makefile.am:
+	* rc/gtkcombobox.rc:
+	* rc/gtkfilechooserbutton.rc:
+	* rc/gtkmenu.rc:
+	* rc/gtkprogressbar.rc:
+	* rc/gtkrc.maemo_af_desktop.rc:
+	* rc/gtkrc.rc:
+	* rc/gtktextview.rc:
+	* rc/gtktoggletoolbutton.rc:
+	* rc/gtktoolbutton.rc:
+	* rc/hildonappsmenu.rc:
+	* rc/hildondateeditor.rc:
+	* rc/hildonhome.rc:
+	* rc/hildonnavigator.rc:
+	* rc/hildonstatusbar.rc:
+	* rc/hildontimeeditor.rc:
+	* rc/hildonwebshortcut.rc:
+	* rc/hildonwindow.rc:
+	* rc/ossointernetsearchapplet.rc:
+	* rc/ossoiradioapplet.rc:
+	* rc/ossomediaplayer.rc:
+	* rc/ossopromoapplet.rc:
+	* rc/ossorssfeedreader.rc: Remove orphans and fix warnings
+
+2008-10-24  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: combobox fixes, hopefully final :-) - also some
+	progressbar changes and toolbar buttons got enlarged.
+	
+2008-10-23  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktreeview.rc: Set fremantle's touchlist GtkWidget::mode
+	to HILDON_FREMANTLE.
+
+2008-10-23  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenuitem.rc: Capitalization change
+
+2008-10-22  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Toolbar backgrounds revamp - it's now 800x70
+	for all toolbar background images to make it better themeable.
+
+	Also removed a LOT of legacy framework graphics - that hopefully
+	are not being used anywhere anymore..
+	
+	* data/colors.css: Oops, added DarkerBackgroundColor also to the
+	CSS file..
+
+2008-10-21  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkmenuitem.rc: Add style for hildon sized context menu
+
+2008-10-16  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.7.0-1 release]
+
+	* configure.ac: bump version
+	* debian/changelog: updates
+
+2008-10-16  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkcombobox.rc: New combobox style, appear-as-list again.
+	* rc/gtkdialog.rc: Minor tweak to the button spacings.
+
+2008-10-08  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.6.0-1 release]
+
+	* configure.ac: bump version
+	* debian/changelog: updates
+
+2008-10-08  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkfilechooserbutton.rc:
+	* rc/gtktextview.rc:
+	* rc/hildondateeditor.rc:
+	* rc/hildontimeeditor.rc:
+
+	Update name of images to reflect changes in the layout.
+
+2008-10-07  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* rc/themespecificgtk.rc, data/layout.txt (DarkerBackgroundColor):
+	Added new logical color.
+
+	* rc/themespecificgtk.rc: Added Fremantle font sizes/def's and
+	updated older font def's to new sizes as well.
+
+2008-10-07  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc, rc/gtkcombobox.rc: New combo-box and -entry styles.
+
+2008-10-06  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: combo-box and -entry theming revamp.
+
+2008-10-02  Daniel Borgmann  <danielb@openismus.com>
+
+	* rc/gtkentry.rc: Fixes to frames and insensitive styles for
+	HildonEntry.
+
+2008-09-24  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/colors.css: new file, contains CSS definitions of all
+	platform logical colors, should be useful for themeing web runtime
+	views in applications.
+
+2008-09-23  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkbutton.rc: Theme only the value label for HildonPickerButton,
+	not HildonButton.
+
+2008-09-23  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: removed startup wizard coords, as they got
+	moved out of here.
+
+2008-09-22  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.5.0-1 release]
+
+	* debian/changelog: updates.
+	* configure.ac: bump version.
+
+2008-09-22  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktextview.rc: Theme placeholder text in HildonTextView.
+
+2008-09-22  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkbutton.rc: Theme HildonButton's value label.
+
+2008-09-15  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Moved startup wizard stuff 80 pixels down to
+	make room for some more framework button states. So much for clean
+	layout.. :S
+
+2008-09-12  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkcombobox.rc: Initial theming of the combobox widgets. Use arrows
+	provided by Tuomas and increase arrow size. We still need to improve theming of the
+	GtkComboBoxEntry.
+
+2008-09-12  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Added button graphics for combobox*entry*
+	arrows, as those are now different from the regular combobox, due
+	to differing background colors on the widgets.
+
+2008-09-11  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktextview.rc: Fix the logical ID for the reversed background
+	color, according with Tuomas changes.
+
+2008-09-11  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktextview.rc: Color theming for the GtkTextView, 
+	plus focus theming. Normal and disabled states theming added
+	as well, but depend on not yet reviewed patch for GtkTextView
+	(NB#88288).
+
+2008-09-11  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: New color palette in place.
+
+	* rc/ossomediaplayer.rc: deleted - no longer in fremantle.
+	* rc/ossospeeddial.rc: deleted - no longer in fremantle.
+
+	* rc/gtkrc.maemo_af_desktop.rc: updated for removed file
+	* rc/Makefile.am (layoutdir): updated for removed files
+
+	* rc/gtkbutton.rc: color fixes
+	* rc/gtkpaned.rc: color fixes
+	* rc/hildonnavigatorpopuplist.rc: color fixes
+	* rc/afterthemespecificgtk.rc: color fixes
+	* rc/gtkprogressbar.rc: color fixes
+	
+2008-09-10  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* rc/ossospeeddial.rc: PaintedBackgrdColor -> PaintedBackgroundColor
+
+	* rc/themespecificgtk.rc: Revamped the whole color palette. Expect
+	breakage here and there. It was just way too messy and big.
+
+2008-09-10  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktreeview.rc: Use the new GtkTreeView::row-height
+	style property to set the height of rows in a Hildon Touch List.
+
+2008-09-10  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkentry.rc: Add theming for the placeholder text.
+
+2008-09-08  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.4.0-1 release]
+
+	* configure.ac: Bump version.
+	* debian/changelog: Updates.
+
+2008-09-08  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkentry.rc: Update inner border and fix indentation.
+
+2008-09-05  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtkentry.rc: Initial matching for the Hildon Touch Text Entry.
+
+2008-09-05  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktreeview.rc: Fix the ordering, add some comments, and
+	disable the focus drawing.
+
+2008-09-04  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added custom button gfx for confirmation note 
+	buttons (so they can be styled to match the dialog itself)
+
+2008-09-02  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added confirmation note bg, resized dialog
+	bg. Also removed dialog help buttons as those are deprecated and
+	shouldnt be used.
+
+2008-08-29  Claudio Saavedra  <csaavedra@igalia.com>
+
+	* rc/gtktreeview.rc: Add the mapping for the Hildon Touch List.
+
+2008-08-27  Claudio Saavedra  <csaavedra@igalia.com>
+
+	[0.3.0-1 release]
+
+	* configure.ac: prerelease version bump.
+	* debian/changelog: added changelog entry.
+
+2008-08-27  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Added Touch List background bitmaps
+
+2008-08-26  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Added startup wizad clock hands and shadows for
+	them in the template layout
+
+2008-08-25  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	[0.2.0-1 release]
+	
+	* configure.ac: 
+	* debian/changelog: Updating.
+
+2008-08-07  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	[0.1.1-1 release]
+
+	* configure.ac:
+	* debian/changelog: Updating.
+	* COPYING, debian/copyright: Creative Commons 2.5 -> 3.0 for debian compatibility
+
+2008-06-27  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: added bunch of h2.2 stuff
+
+	* rc/themespecificgtk.rc: added new colors for reversed 
+	text and background
+
+	* data/layout.txt: added some first h2.2 widget graphics
+
+2008-06-26  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: template is now 10000 pixels wide to make room
+	for new things..
+
+2008-06-17  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: oops. reverted back. lets try a different
+	approach and not move stuff around in the old theme template at
+	this point.
+	
+2008-05-28  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* data/layout.txt: Imported new coordinates.
+	
+2008-05-27  Tuomas Kuosmanen  <tuomas.kuosmanen@nokia.com>
+
+	* pkgconfig/hildon-theme-layout-4.pc.in:
+	* ChangeLog.4:
+	* README:
+	* configure.ac:
+	* debian/changelog:
+	* debian/control:
+	* debian/rules:
+	* pkgconfig/Makefile.am:
+	* pkgconfig/hildon-theme-layout-3.pc.in: Changes for
+	hildon-theme-layout-4.
+

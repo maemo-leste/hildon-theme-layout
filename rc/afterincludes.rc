@@ -1,0 +1,35 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+widget "osso-SystemFont" style "osso-SystemFont"
+widget "osso-EmpSystemFont" style "osso-EmpSystemFont"
+widget "osso-TitleFont" style "osso-TitleFont"
+widget "osso-ButtonFont" style "osso-ButtonFont"
+widget "osso-SmallFont" style "osso-SmallFont"
+widget "osso-LargeFont" style "osso-LargeFont"
+widget "osso-HWRFont1" style "osso-HWRFont1"
+widget "osso-HWRFont2" style "osso-HWRFont2"
+
+widget "SystemFont" style "SystemFont"
+widget "EmpSystemFont" style "EmpSystemFont"
+widget "XXX-LargeSystemFont" style "XXX-LargeSystemFont"
+widget "XX-LargeSystemFont" style "XX-LargeSystemFont"
+widget "X-LargeSystemFont" style "X-LargeSystemFont"
+widget "LargeSystemFont" style "LargeSystemFont"
+widget "SmallSystemFont" style "SmallSystemFont"
+widget "EmpSmallSystemFont" style "EmpSmallSystemFont"
+widget "HomeSystemFont" style "HomeSystemFont"
+
+# Setting default font style
+class "GtkWidget" style "SystemFont"
+
+####
+# To be moved :
+####
+
+style "Toolbar_max_expand"
+{
+GtkToolbar::max_child_expand = 48
+}
+
+class "GtkWidget" style "Toolbar_max_expand"

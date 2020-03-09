@@ -1,0 +1,88 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+style "fremantle-progressnote"
+{
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file     = "../images/wmDialog.png"
+			border   = {16, 16, 46, 0}
+		}
+	}
+}
+widget "HildonNote-progressbar" style "fremantle-progressnote"
+
+style "fremantle-confirmation"
+{
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file     = "../images/wmConfirmationNote.png"
+			border   = {16, 16, 16, 16}
+		}
+	}
+}
+widget "HildonNote-confirmation" style "fremantle-confirmation"
+widget "HildonNote-confirmation-button" style "fremantle-confirmation"
+
+style "fremantle-note"
+{
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file     = "../images/wmBanner.png"
+			border   = {0, 0, 8, 8}
+		}
+	}
+}
+widget "HildonNote-information-theme" style "fremantle-note"
+widget "HildonBanner-information" style "fremantle-note"
+widget "HildonBanner-animation" style "fremantle-note"
+widget "HildonBanner-progress" style "fremantle-note"
+
+style "fremantle-note-portrait"
+{
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file     = "../images/wmBannerPortrait.png"
+			border   = {0, 0, 8, 8}
+		}
+	}
+}
+widget "HildonNote-information-theme-portrait" style "fremantle-note-portrait"
+widget "HildonBanner-information-portrait" style "fremantle-note-portrait"
+widget "HildonBanner-animation-portrait" style "fremantle-note-portrait"
+widget "HildonBanner-progress-portrait" style "fremantle-note-portrait"
+
+style "fremantle-note-label" = "osso-color-themeing"
+{
+	fg[NORMAL] = @ReversedTextColor
+	
+	engine "sapwood" {
+		shadowcolor = @DefaultTextColor
+	}
+}
+widget "*.HildonNoteLabel-information-theme" style "fremantle-note-label"
+widget "*.HildonBannerLabel-information" style "fremantle-note-label"
+widget "*.HildonBannerLabel-animation" style "fremantle-note-label"
+widget "*.HildonBannerLabel-progress" style "fremantle-note-label"
+widget "*.HildonNoteLabel-information-theme-portrait" style "fremantle-note-label"
+widget "*.HildonBannerLabel-information-portrait" style "fremantle-note-label"
+widget "*.HildonBannerLabel-animation-portrait" style "fremantle-note-label"
+widget "*.HildonBannerLabel-progress-portrait" style "fremantle-note-label"
+
+# Call UI active call BG:
+style "fremantle-call-banner"
+{
+	engine "sapwood" {
+		image {
+			function = BOX
+			file     = "../images/CallBanner.png"
+			border   = {0, 0, 20, 20}
+		}
+	}
+}
+widget "*.hildon-call-banner" style "fremantle-call-banner"
+

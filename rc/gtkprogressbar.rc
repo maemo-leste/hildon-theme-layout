@@ -1,0 +1,70 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-progressbar" = "osso-logical-colors"
+{
+    xthickness = 3
+    ythickness = 3
+    
+    GtkProgressBar::min-horizontal-bar-height = 70
+    GtkProgressBar::min-vertical-bar-width = 70
+
+    GtkProgressBar::xspacing = 0
+    GtkProgressBar::yspacing = 0
+
+    fg[NORMAL] = @DefaultTextColor
+    fg[PRELIGHT] = @PaintedTextColor
+
+    engine "sapwood"
+    {
+        image
+        {
+            function = BOX
+            detail = "bar"
+            file = "../images/Progressbar.png"
+            border = { 2, 2, 31, 31 }
+        }
+        image 
+        {	
+            function = BOX
+            detail = "trough"
+            file = "../images/ProgressbarBackground.png"
+            border = { 24, 24, 34, 34 }
+        }
+    }
+}
+class "GtkProgressBar" style "osso-progressbar"
+
+style "fremantle-small-progressbar" = "osso-logical-colors"
+{
+    xthickness = 2
+    ythickness = 2
+    
+    GtkProgressBar::min-horizontal-bar-height = 16
+    GtkProgressBar::min-vertical-bar-width = 16
+
+    GtkProgressBar::xspacing = 0
+    GtkProgressBar::yspacing = 0
+
+    fg[NORMAL] = @DefaultTextColor
+    fg[PRELIGHT] = @PaintedTextColor
+
+    engine "sapwood"
+    {
+        image
+        {
+            function = BOX
+            detail = "bar"
+            file = "../images/ProgressbarSmall.png"
+            border = { 2, 2, 2, 2 }
+        }
+        image 
+        {	
+            function = BOX
+            detail = "trough"
+            file = "../images/ProgressbarSmallBackground.png"
+            border = { 2, 2, 2, 2 }
+        }
+    }
+}
+widget "*.small-progress-bar" style "fremantle-small-progressbar"

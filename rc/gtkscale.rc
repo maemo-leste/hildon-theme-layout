@@ -1,0 +1,586 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "fremantle-scale-horizontal"
+{
+	GtkScale::slider-length = 40
+	GtkScale::slider-width = 60
+	GtkRange::trough-side-details = 1
+
+	engine "sapwood"
+	{
+		
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			state = INSENSITIVE
+			file = "../images/SliderLeftsideDisabled.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/SliderLeftside.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			state = INSENSITIVE
+			file = "../images/SliderRightsideDisabled.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/SliderRightside.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			state = INSENSITIVE
+			file = "../images/SliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			file = "../images/SliderThumb.png"
+		}
+	}
+}
+class "GtkHScale" style "fremantle-scale-horizontal"
+
+style "fremantle-scale-vertical"
+{
+	GtkScale::slider-length = 40
+	GtkScale::slider-width = 60
+	GtkRange::trough-side-details = 1
+
+	engine "sapwood"
+	{
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			state = INSENSITIVE
+			file = "../images/VSliderBottomDisabled.png"
+			border = {0, 0, 0, 6}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/VSliderBottom.png"
+			border = {0, 0, 0, 6}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			state = INSENSITIVE
+			file = "../images/VSliderTopDisabled.png"
+			border = {0, 0, 6, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/VSliderTop.png"
+			border = {0, 0, 6, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			state = INSENSITIVE
+			file = "../images/VSliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			file = "../images/VSliderThumb.png"
+		}
+	}
+}
+class "GtkVScale" style "fremantle-scale-vertical"
+
+# Bi-directional scales (negative/positive)
+style "fremantle-biscale-horizontal"
+{
+	GtkScale::slider-length = 40
+	GtkScale::slider-width = 60
+	GtkRange::trough-side-details = 0
+
+	engine "sapwood"
+	{
+		
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough"
+			state = INSENSITIVE
+			file = "../images/BiDirectionalSliderBackgroundDisabled.png"
+			border = {6, 6, 0, 0}
+			overlay_file = "../images/BiDirectionalSliderCenterPointDisabled.png"
+			overlay_border = {0, 0, 1, 0}
+			overlay_stretch = FALSE
+		}
+		image
+		{
+			function = BOX
+			detail = "trough"
+			file = "../images/BiDirectionalSliderBackground.png"
+			border = {6, 6, 0, 0}
+			overlay_file = "../images/BiDirectionalSliderCenterPoint.png"
+			overlay_border = {0, 0, 1, 0}
+			overlay_stretch = FALSE
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			state = INSENSITIVE
+			file = "../images/BiDirectionalSliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			file = "../images/BiDirectionalSliderThumb.png"
+		}
+	}
+}
+widget "*.bidirectional-slider-horizontal" style "fremantle-biscale-horizontal"
+
+style "fremantle-biscale-vertical"
+{
+	GtkScale::slider-length = 40
+	GtkScale::slider-width = 60
+	GtkRange::trough-side-details = 0
+
+	engine "sapwood"
+	{
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough"
+			state = INSENSITIVE
+			file = "../images/BiDirectionalVSliderBackgroundDisabled.png"
+			border = {0, 0, 6, 6}
+			overlay_file = "../images/BiDirectionalVSliderCenterPointDisabled.png"
+			overlay_border = {1, 0, 0, 0}
+			overlay_stretch = FALSE
+		}
+		image
+		{
+			function = BOX
+			detail = "trough"
+			file = "../images/BiDirectionalVSliderBackground.png"
+			border = {0, 0, 6, 6}
+			overlay_file = "../images/BiDirectionalVSliderCenterPoint.png"
+			overlay_border = {1, 0, 0, 0}
+			overlay_stretch = FALSE
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			state = INSENSITIVE
+			file = "../images/BiDirectionalVSliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			file = "../images/BiDirectionalVSliderThumb.png"
+		}
+	}
+}
+widget "*.bidirectional-slider-vertical" style "fremantle-biscale-vertical"
+
+# Lock Slider
+
+style "fremantle-lock-slider"
+{
+	GtkScale::slider-length = 148
+	GtkScale::slider-width = 94
+	GtkRange::trough-side-details = 1
+
+	engine "pixmap"
+	{
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/LockSliderLeft.png"
+			border = {70, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/LockSliderRight.png"
+			border = {0, 70, 0, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			file = "../images/LockSliderThumb.png"
+		}
+	}
+}
+widget "*.sui-tklock-slider" style "fremantle-lock-slider"
+
+style "fremantle-lock-slider-portrait"
+{
+        GtkScale::slider-length = 148
+        GtkScale::slider-width = 94
+        GtkRange::trough-side-details = 1
+
+        engine "pixmap"
+        {
+                image
+                {
+                        function = BOX
+                        detail = "stepper"
+                }
+                image
+                {
+                        function = BOX
+                        detail = "trough-lower"
+                        file = "../images/LockSliderTop.png"
+                        border = {0, 0, 70, 0}
+                }
+                image
+                {
+                        function = BOX
+                        detail = "trough-upper"
+                        file = "../images/LockSliderBottom.png"
+                        border = {0, 0, 0, 70}
+                }
+                image
+                {
+                        function = SLIDER
+                        orientation = VERTICAL
+                        file = "../images/LockSliderThumbPortrait.png"
+                }
+        }
+}
+widget "*.sui-tklock-slider-portrait" style "fremantle-lock-slider-portrait"
+
+
+
+# deprectated stuff, we just make it look like normal scales
+style "osso-volumebar-horizontal"
+{
+  HildonVolumebarRange::stepper_size = 26
+  HildonVolumebarRange::stepper_spacing = 0
+  HildonVolumebarRange::slider_width = 60
+  HildonVolumebarRange::slider_length = 40
+  HildonVolumebarRange::focus_line_width = 0
+  HildonVolumebarRange::focus_padding = 0
+  HildonVolumebarRange::stepper_spacing = 6
+  HildonVolumebarRange::arrow_displacement_x = 0
+  HildonVolumebarRange::arrow_displacement_y = 0
+  HildonVolumebarRange::trough_border = 0
+  HildonVolumebarRange::value_spacing = 0
+  HildonVolumebarRange::autodimmed_steppers = 1
+  HildonVolumebarRange::trough-side-details = 1
+  HildonVolumebarRange::draw_trough_under_steppers = 0
+  
+	engine "sapwood"
+	{
+		image
+		{
+			function = BOX
+			detail = "background"
+			state = NORMAL
+		}
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			state = INSENSITIVE
+			file = "../images/SliderLeftsideDisabled.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/SliderLeftside.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			state = INSENSITIVE
+			file = "../images/SliderRightsideDisabled.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/SliderRightside.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			state = INSENSITIVE
+			file = "../images/SliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			file = "../images/SliderThumb.png"
+		}
+	}
+}
+class "HildonHVolumebar" style "osso-volumebar-horizontal" 
+widget_class "*.HildonHVolumebar.HildonVolumebarRange" style "osso-volumebar-horizontal"
+
+style "osso-volumebar-vertical"
+{
+  HildonVolumebarRange::stepper_size = 26
+  HildonVolumebarRange::stepper_spacing = 0
+  HildonVolumebarRange::slider_width = 60
+  HildonVolumebarRange::slider_length = 40
+  HildonVolumebarRange::focus_line_width = 0
+  HildonVolumebarRange::focus_padding = 0
+  HildonVolumebarRange::stepper_spacing = 6
+  HildonVolumebarRange::arrow_displacement_x = 0
+  HildonVolumebarRange::arrow_displacement_y = 0
+  HildonVolumebarRange::trough_border = 0
+  HildonVolumebarRange::value_spacing = 0
+  HildonVolumebarRange::autodimmed_steppers = 1
+  HildonVolumebarRange::trough-side-details = 1
+  HildonVolumebarRange::draw_trough_under_steppers = 0
+  
+	engine "sapwood"
+	{
+		image
+		{
+			function = BOX
+			detail = "background"
+			state = NORMAL
+		}
+		image
+		{
+			function = BOX
+			detail = "stepper"
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			state = INSENSITIVE
+			file = "../images/VSliderBottomDisabled.png"
+			border = {0, 0, 0, 6}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/VSliderBottom.png"
+			border = {0, 0, 0, 6}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			state = INSENSITIVE
+			file = "../images/VSliderTopDisabled.png"
+			border = {0, 0, 6, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/VSliderTop.png"
+			border = {0, 0, 6, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			state = INSENSITIVE
+			file = "../images/VSliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = VERTICAL
+			file = "../images/VSliderThumb.png"
+		}
+	}
+}
+class "HildonVVolumebar" style "osso-volumebar-vertical"
+widget_class "*.HildonVVolumebar.HildonVolumebarRange" style "osso-volumebar-vertical"
+
+style "osso-volumebar-mutebutton"
+{
+
+  GtkWidget::focus_line_pattern = "\0\0\0\0\0\0\0\0"
+  
+  engine "sapwood"
+  {
+    image
+    {
+      function = BOX
+      shadow = OUT
+      state = INSENSITIVE
+      file = "../images/VolumeButtonNormalDisabled.png"
+    }
+    image
+    {
+      function = BOX
+      shadow = OUT
+      file = "../images/VolumeButtonNormal.png"
+    }
+    image
+    {
+      function = BOX
+      shadow = IN
+      state = INSENSITIVE
+      file = "../images/VolumeButtonMutedDisabled.png"
+    }
+    image
+    {
+      function = BOX
+      shadow = IN
+      file = "../images/VolumeButtonMuted.png"
+    }
+   image
+    {
+      function = FOCUS
+    }
+  }
+}
+widget_class "*.HildonHVolumebar.GtkToggleButton" style "osso-volumebar-mutebutton"
+widget_class "*.HildonVVolumebar.GtkToggleButton" style "osso-volumebar-mutebutton"
+
+
+style "osso-seekbar"
+{
+	HildonSeekbar::stepper_size = 26
+	HildonSeekbar::stepper_spacing = 6
+	HildonSeekbar::trough_border = 0
+	HildonSeekbar::slider_width = 60
+	HildonSeekbar::slider_length = 40
+        HildonSeekbar::focus-line-width = 0
+        HildonSeekbar::focus-padding = 0
+        HildonSeekbar::autodimmed_steppers = 1
+	HildonSeekbar::draw_trough_under_steppers = 0
+        HildonSeekbar::two_part_trough = 1
+        HildonSeekbar::trough-side-details = 1
+        GtkRange::stream_indicator_padding = 3
+	
+	engine "sapwood" {
+		#
+		# At first, lets override some gtkrange specific things
+		#
+      		image {
+	 		function = BOX
+			detail = "stepper"
+      		}
+      		image {
+	 		function = BOX
+			detail = "trough-fill-level-full"
+      		}
+      		image {
+	 		function = BOX
+			detail = "trough-fill-level"
+      		}
+      		
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			state = INSENSITIVE
+			file = "../images/SliderLeftsideDisabled.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-lower"
+			file = "../images/SliderLeftside.png"
+			border = {6, 0, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			state = INSENSITIVE
+			file = "../images/SliderRightsideDisabled.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = BOX
+			detail = "trough-upper"
+			file = "../images/SliderRightside.png"
+			border = {0, 6, 0, 0}
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			state = INSENSITIVE
+			file = "../images/SliderThumbDisabled.png"
+		}
+		image
+		{
+			function = SLIDER
+			orientation = HORIZONTAL
+			file = "../images/SliderThumb.png"
+		}
+
+                
+	}
+}
+class "HildonSeekbar" style "osso-seekbar"

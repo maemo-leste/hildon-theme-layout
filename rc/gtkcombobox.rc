@@ -1,0 +1,358 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-combobox-base" = "osso-logical-colors" {
+	base[NORMAL] = @ComboboxBackgroundColor
+
+	GtkWidget::focus-line-width = 5
+	GtkWidget::focus-padding = 5
+	#GtkWidget::focus-line-pattern = "\0\0\0\0\0\0\0\0"
+	GtkComboBox::autodimmed_button = 1
+	GtkComboBox::appears-as-list = 1
+	GtkComboBox::arrow-size = 30
+	GtkComboBox::has-frame = 1
+}
+class "GtkComboBox" style "osso-combobox-base"
+
+###################################################
+#
+# Styles for non-entry ComboBox
+#
+###################################################
+
+style "osso-combobox-arrow"
+{
+        GtkArrow::arrow-scaling = 1.0
+
+        engine "sapwood"
+        {
+                image 
+                {
+                        function = ARROW
+                        state = INSENSITIVE
+                        overlay_file = "../images/combobox_arrow_disabled.png"
+                        overlay_stretch = FALSE
+                }
+                image 
+                 {
+                        function = ARROW
+                        state = ACTIVE
+                        overlay_file = "../images/combobox_arrow_pressed.png"
+                        overlay_stretch = FALSE
+                }
+                image 
+                {
+                        function = ARROW
+                        overlay_file = "../images/combobox_arrow_normal.png"
+                        overlay_stretch = FALSE
+                }
+        }
+}
+widget_class "*.<GtkComboBox>.GtkToggleButton.GtkArrow" style "osso-combobox-arrow"
+
+style "osso-combobox-frame" {
+    xthickness = 5
+    ythickness = 5
+
+    engine "sapwood" {
+    	image {
+            function = SHADOW
+            state = INSENSITIVE
+            file = "../images/combobox_frame_disabled.png"
+            border = { 14, 14, 14, 14 }
+        }
+    
+        image {
+            function = SHADOW
+            file = "../images/combobox_frame_normal.png"
+            border = { 14, 14, 14, 14 }
+        }
+    }
+}
+widget_class "*.<GtkComboBox>.GtkFrame" style "osso-combobox-frame"
+
+style "osso-combobox-button" {
+    GtkButton::child-displacement-x = 0
+    GtkButton::child-displacement-y = 0
+    xthickness = 0
+    ythickness = 0
+    GtkWidget::interior-focus = 1
+
+    engine "sapwood" {
+        image {
+            function = BOX
+            shadow = IN
+            file = "../images/combobox_button_pressed.png"
+	          border = { 14, 14, 14, 14 }
+        }
+        image {
+            function = BOX
+            file = "../images/combobox_button_disabled.png"
+            state = INSENSITIVE
+	          border = { 14, 14, 14, 14 }
+        }
+        image {
+            function = BOX
+            file = "../images/combobox_button_normal.png"
+	          border = { 14, 14, 14, 14 }
+        }
+        image {
+            function = TAB
+        }
+    }
+}
+widget_class "*.<GtkComboBox>.GtkToggleButton" style "osso-combobox-button"
+
+###################################################
+#
+# Styles for ComboBoxEntry
+#
+###################################################
+
+# We have a base style for combobox-entry too, because we
+# might have a different looking search combobox.
+
+style "osso-combobox-entry-base" {
+    xthickness = 0
+    ythickness = 0
+    GtkEntry::inner-border = { 4, 4, 0, 0 }
+    GtkComboBox::arrow-size = 30
+}
+widget_class "*.<GtkComboBoxEntry>.GtkEntry" style "osso-combobox-entry-base"
+
+style "osso-combobox-entry-entry" = "osso-color-themeing" {
+    xthickness = 8
+    ythickness = 8
+    
+    GtkWidget::interior-focus = 1
+    GtkEntry::inner-border = { 0, 0, 0, 0 }
+    GtkEntry::state-hint = 1
+    
+    text[NORMAL] = @ReversedTextColor
+
+    engine "sapwood"
+    {
+        image
+        {
+            function = SHADOW
+            state    = INSENSITIVE
+            file = "../images/combobox_entry_disabled.png"
+            border   = { 8, 8, 8, 8 }
+        }
+        image
+        {
+            function = SHADOW
+            state    = ACTIVE
+            file = "../images/combobox_entry_focused.png"
+            border   = { 8, 8, 8, 8 }
+        }
+        image
+        {
+            function = SHADOW
+            file = "../images/combobox_entry_normal.png"
+            border   = { 8, 8, 8, 8 }
+        }
+        
+        image
+        {
+            function = FLAT_BOX
+            state    = INSENSITIVE
+            file = "../images/combobox_entry_disabled_center.png"
+        }
+        image
+        {
+            function = FLAT_BOX
+            state    = ACTIVE
+            file = "../images/combobox_entry_focused_center.png"
+        }
+        image
+        {
+            function = FLAT_BOX
+            file = "../images/combobox_entry_normal_center.png"
+        }
+    }
+}
+widget_class "*.<GtkComboBoxEntry>.<GtkEntry>" style  "osso-combobox-entry-entry"
+
+style "osso-combobox-entry-button" {
+        xthickness = 0
+        ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = FOCUS
+		}
+		image {
+			function = BOX
+			file = "../images/combobox_entry_button_disabled.png"
+			state = INSENSITIVE
+			border = { 2, 14, 14, 14 }
+		}
+		image {
+			function = BOX
+			shadow = IN
+			file = "../images/combobox_entry_button_pressed.png"
+			border = { 2, 14, 14, 14 }
+		}
+		image {
+			function = BOX
+			file = "../images/combobox_entry_button_normal.png"
+			border = { 2, 14, 14, 14 }
+		}
+		image {
+			function = TAB
+		}
+	}
+}
+widget_class "*.<GtkComboBoxEntry>.GtkToggleButton" style "osso-combobox-entry-button"
+
+
+# Special fremantle combobox themeing (used by browser UI)
+
+style "fremantle-combobox-entry-entry" = "osso-color-themeing" {
+	xthickness = 16
+	ythickness = 0
+
+	GtkWidget::interior-focus = 1
+	GtkEntry::inner-border = { 0, 0, 16, 16 }
+	GtkEntry::state-hint = 1
+
+	text[NORMAL] = @ReversedTextColor
+
+	engine "sapwood" {
+	        image {
+			function = SHADOW
+			state = INSENSITIVE
+			file = "../images/ComboBoxTextInputLFrameDisabled.png"
+			border = { 16, 16, 16, 16 }
+		}
+		image {
+			function = SHADOW
+			state = ACTIVE
+			file = "../images/ComboBoxTextInputLFrameFocused.png"
+			border = { 16, 16, 16, 16 }
+		}
+		image {
+			function = SHADOW
+			state = NORMAL
+			file = "../images/ComboBoxTextInputLFrame.png"
+			border = { 16, 16, 16, 16 }
+		}
+
+                image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = INSENSITIVE
+			file = "../images/ComboBoxTextInputDisabled.png"
+			border = { 0, 0, 16, 16 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = ACTIVE
+			file = "../images/ComboBoxTextInputFocused.png"
+			border = { 0, 0, 16, 16 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = NORMAL
+			file = "../images/ComboBoxTextInput.png"
+			border = { 0, 0, 16, 16 }
+		}
+		image
+		{
+			function = BOX
+			detail = "entry-progress"
+			file = "../images/TextInputProgress.png"
+			border = { 12, 12, 18, 18 }
+		}
+	}
+}
+widget "*.hildon-combobox.HildonEntry-finger" style  "fremantle-combobox-entry-entry"
+
+# Special style for the combobox button when the entry has focused, for the unified look
+style "fremantle-combobox-entry-active-button" {
+	xthickness = 0
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = FOCUS
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			file = "../images/ComboBoxTextInputRFrameFocused.png"
+			border = { 16, 16, 16, 16 }
+			overlay_file = "../images/ComboBoxButtonDisabled.png"
+		}
+		image {
+			function = BOX
+			shadow = IN
+			file = "../images/ComboBoxTextInputRFrameFocused.png"
+			border = { 16, 16, 16, 16 }
+			overlay_file = "../images/ComboBoxButtonPressed.png"
+		}
+		image {
+			function = BOX
+			file = "../images/ComboBoxTextInputRFrameFocused.png"
+			border = { 16, 16, 16, 16 }
+			overlay_file = "../images/ComboBoxButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-combobox-active-button" style  "fremantle-combobox-entry-active-button"
+
+# Disabled button only used by Qt styling so far.
+style "fremantle-combobox-entry-disabled-button" {
+	xthickness = 0
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = FOCUS
+		}
+		image {
+			function = BOX
+			file = "../images/ComboBoxTextInputRFrameDisabled.png"
+			border = { 16, 16, 16, 16 }
+		}
+	}
+}
+widget "*.hildon-combobox-disabled-button" style  "fremantle-combobox-entry-disabled-button"
+
+
+style "fremantle-combobox-entry-button" {
+	xthickness = 0
+	ythickness = 0
+
+	engine "sapwood" {
+		image {
+			function = FOCUS
+		}
+		
+		image {
+			function = BOX
+			state = INSENSITIVE
+			file = "../images/ComboBoxTextInputRFrame.png"
+			border = { 16, 16, 16, 16 }
+			overlay_file = "../images/ComboBoxButtonDisabled.png"
+		}
+		image {
+			function = BOX
+			shadow = IN
+			file = "../images/ComboBoxTextInputRFrame.png"
+			border = { 16, 16, 16 ,16 }
+			overlay_file = "../images/ComboBoxButtonPressed.png"
+		}
+		image {
+			function = BOX
+			file = "../images/ComboBoxTextInputRFrame.png"
+			border = { 16, 16, 16 ,16 }
+			overlay_file = "../images/ComboBoxButtonNormal.png"
+		}
+	}
+}
+widget "*.hildon-combobox-button" style  "fremantle-combobox-entry-button"
+

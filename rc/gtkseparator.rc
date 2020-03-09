@@ -1,0 +1,43 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+style "osso-separator"
+{
+	GtkVSeparator::wide-separators = 1
+	GtkHSeparator::wide-separators = 1
+	GtkVSeparator::separator-width = 3
+	GtkHSeparator::separator-height = 3
+ 
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "hseparator"
+			file     = "../images/qgn_plat_separator_horizontal.png"
+			border   = { 6, 6, 0, 0 }
+		}
+		image {
+			function = BOX
+			detail   = "vseparator"
+			file     = "../images/qgn_plat_separator_vertical.png"
+			border   = { 0, 0, 6, 6 }
+		}
+	}
+}
+class "GtkSeparator" style "osso-separator"
+
+style "edit-toolbar-separator"
+{
+	GtkVSeparator::wide-separators = 1
+	GtkHSeparator::wide-separators = 1
+	GtkVSeparator::separator-width = 2
+	GtkHSeparator::separator-height = 2
+ 
+	engine "sapwood" {
+		image {
+			function = BOX
+			detail   = "vseparator"
+			file     = "../images/wmSeparator.png"
+		}
+	}
+}
+widget_class "*.HildonEditToolbar.GtkVSeparator" style "edit-toolbar-separator"

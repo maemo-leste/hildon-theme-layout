@@ -1,0 +1,161 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+# theme specific stuff here. Included by gtkrc.
+
+##############################
+#
+# Logical color definitions
+#
+##############################
+
+style "osso-logical-colors" {
+      
+# text colors
+	color["DefaultTextColor"]        = "@DefaultTextColor@"
+	color["SecondaryTextColor"]      = "@SecondaryTextColor@"
+	color["ActiveTextColor"]     	 = "@ActiveTextColor@"
+	color["DisabledTextColor"]       = "@DisabledTextColor@"
+	color["PaintedTextColor"] 	 = "@PaintedTextColor@"
+
+# special cases when we need dark text on light background..
+	color["ReversedTextColor"]          = "@ReversedTextColor@"
+	color["ReversedSecondaryTextColor"] = "@ReversedSecondaryTextColor@"
+	color["ReversedActiveTextColor"]    = "@ReversedActiveTextColor@"
+	color["ReversedDisabledTextColor"]  = "@ReversedDisabledTextColor@"
+	color["ReversedPaintedTextColor"]   = "@ReversedPaintedTextColor@"
+
+# background colors
+	color["DefaultBackgroundColor"]   = "@DefaultBackgroundColor@"
+	color["DarkerBackgroundColor"]    = "@DarkerBackgroundColor@"
+	color["ReversedBackgroundColor"]  = "@ReversedBackgroundColor@"
+	color["SelectionColor"]           = "@SelectionColor@"
+	color["ReversedSelectionColor"]	  = "@ReversedSelectionColor@"
+
+# media /thumbnail /album cover views etc..
+	color["ContentBackgroundColor"]	 = "@ContentBackgroundColor@"
+	color["ContentFrameColor"]	 = "@ContentFrameColor@"
+        color["ContentSelectionColor"]	 = "@ContentSelectionColor@"
+
+# framework
+	color["TitleTextColor"]		  = "@TitleTextColor@"
+
+        color["ButtonTextColor"]	  = "@ButtonTextColor@"
+        color["ButtonTextPressedColor"]	  = "@ButtonTextPressedColor@"
+        color["ButtonTextDisabledColor"]  = "@ButtonTextDisabledColor@"
+        
+        color["AlphaKeyColor"]            = "@AlphaKeyColor@"
+
+# crayons to play with
+	color["AccentColor1"]       = "@AccentColor1@"
+	color["AccentColor2"]       = "@AccentColor2@"
+	color["AccentColor3"]       = "@AccentColor3@"
+	color["AttentionColor"]     = "@AttentionColor@"
+
+# Notification Colors
+	color["NotificationBackgroundColor"] = "@NotificationBackgroundColor@"
+	color["NotificationTextColor"] = "@NotificationTextColor@"
+	color["NotificationSecondaryTextColor"] = "@NotificationSecondaryTextColor@"
+
+# evil hack
+       color["ComboboxBackgroundColor"]	= "@ComboboxBackgroundColor@"
+}
+
+##############################
+#
+# Font definitions
+#
+##############################
+
+# legacy
+
+style "osso-SystemFont" {
+	font_name = "Nokia Sans 18"
+}
+
+style "osso-EmpSystemFont" {
+	font_name = "Nokia Sans Bold 18"
+}
+
+style "osso-LargeFont" {
+	font_name = "Nokia Sans 26"
+}
+
+style "osso-SmallFont" {
+	font_name = "Nokia Sans 13"
+}
+
+style "osso-HWRFont1"
+{
+  font_name = "Nokia Sans 52"
+}
+
+style "osso-HWRFont2"
+{
+  font_name = "Nokia Sans 38"
+}
+
+style "osso-TitleFont" {
+	font_name = "Nokia Sans 18"
+}
+
+style "osso-ButtonFont" {
+	font_name = "Nokia Sans 18"
+}
+
+###########################
+# new fonts for fremantle #
+###########################
+
+style "SystemFont" {
+	font_name = "Nokia Sans 18"
+}
+
+style "EmpSystemFont" {
+	font_name = "Nokia Sans Bold 18"
+}
+
+style "LargeSystemFont" {
+	font_name = "Nokia Sans 26"
+}
+
+style "SmallSystemFont" {
+	font_name = "Nokia Sans 13"
+}
+
+style "EmpSmallSystemFont" {
+	font_name = "Nokia Sans Bold 13"
+}
+
+style "X-LargeSystemFont" {
+	font_name = "Nokia Sans 31"
+}
+
+style "XX-LargeSystemFont" {
+	font_name = "Nokia Sans 52"
+}
+
+style "XXX-LargeSystemFont" {
+	font_name = "Nokia Sans 74"
+}
+
+style "HomeSystemFont" {
+	font_name = "Nokia Sans 15"
+}
+
+######################################
+#
+# Application menu popup position
+#
+# The position of application menu relative to application upper-left 
+# position (horizontal = 80, vertical = 60) so adjust below
+# horizontal-offset and vertical-offset to change it from the application
+# upper-left position. The values can be negative too.
+#
+######################################
+
+style "osso-application-menu-popup-position"
+{
+  GtkMenu::horizontal-offset = 10
+  GtkMenu::vertical-offset = -13
+}

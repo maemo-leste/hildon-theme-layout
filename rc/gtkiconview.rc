@@ -1,0 +1,32 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+style "hildon-icon-view-style" = "osso-color-themeing"
+{
+	text[NORMAL] = @DefaultTextColor
+	text[PRELIGHT] = @DefaultTextColor
+	text[ACTIVE] = @DefaultTextColor
+	text[SELECTED] = @DefaultTextColor
+	text[INSENSITIVE] = @DefaultTextColor
+
+	engine "sapwood"
+	{
+		shadowcolor = @ReversedTextColor
+	
+		image { 
+			function = FLAT_BOX
+			file = "../images/RoundedSelection.png"
+			border = { 6, 6, 6, 6 }
+		}
+	}
+}
+class "GtkIconView" style "hildon-icon-view-style"
+
+style "fremantle-touchgrid" = "hildon-icon-view-style"
+{
+	GtkWidget::hildon-mode = 1    # HILDON_FREMANTLE
+}
+widget_class "*.<HildonPannableArea>.<GtkIconView>" style "fremantle-touchgrid"
+# FIXME: temporary work around for control panel, GtkIconView should always be a direct child of pannable area
+class "HCPGrid" style "fremantle-touchgrid"
+

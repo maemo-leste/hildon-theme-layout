@@ -1,0 +1,48 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+	
+style "osso-radiobutton"
+{
+	GtkCheckButton::indicator-size = 26
+	GtkCheckButton::indicator-spacing = 2
+	GtkWidget::interior-focus = 0
+
+	ythickness = 0
+
+	engine "sapwood"
+	{
+		image
+		{
+			function        = OPTION
+			shadow          = OUT
+			state           = INSENSITIVE
+			file    = "../images/qgn_plat_button_radio_empty_disabled.png"
+		}
+		image 
+		{
+			function        = OPTION
+			shadow          = IN
+			state           = INSENSITIVE
+			file    = "../images/qgn_plat_button_radio_selected_disabled.png"
+		}
+		image
+		{
+			function        = OPTION
+			shadow          = OUT
+			file    = "../images/qgn_plat_button_radio_empty_normal.png"
+		}
+		image
+		{
+			function        = OPTION
+			shadow          = IN
+			file    = "../images/qgn_plat_button_radio_selected_normal.png"
+		}
+		image
+		{
+			function = FOCUS
+		}
+	}
+}
+class "GtkRadioButton" style "osso-radiobutton"
+
+widget_class "*.GtkRadioButton.GtkLabel" style "osso-SystemFont"

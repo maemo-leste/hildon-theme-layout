@@ -1,0 +1,44 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+####################################################  
+# Hildon Time Picker
+#
+#
+#################################################### 
+
+style "osso-time-picker-up" {
+
+  engine "sapwood" {
+    image {
+      function = BOX
+      state = ACTIVE
+      overlay_file = "../images/qgn_plat_arrow_up_pressed.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      overlay_file = "../images/qgn_plat_arrow_up_normal.png"
+      overlay_stretch = FALSE
+    }
+  }
+}
+widget "*.hildon-time-picker-up" style "osso-time-picker-up"
+
+style "osso-time-picker-down" {
+
+  engine "sapwood" {
+    image {
+      function = BOX
+      state = ACTIVE
+      overlay_file = "../images/qgn_plat_arrow_down_pressed.png"
+      overlay_stretch = FALSE
+    }
+    image {
+      function = BOX
+      overlay_file = "../images/qgn_plat_arrow_down_normal.png"
+      overlay_stretch = FALSE
+    }
+  }
+}
+widget "*.hildon-time-picker-down" style "osso-time-picker-down"

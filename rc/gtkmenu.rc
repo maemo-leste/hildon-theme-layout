@@ -1,0 +1,116 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-menu" {
+
+   GtkMenu::horizontal_padding = 0
+   GtkMenu::vertical_padding = 0
+   GtkMenu::horizontal_offset = -8
+
+   GtkMenu::double_arrows = 1
+
+   xthickness = 0
+   ythickness = 0
+   GtkWidget::scroll-arrow-vlength = 26
+   GtkMenu::maemo-arrow-scaling = 1.0
+   
+   engine "sapwood" {
+      image {
+	 function = BOX
+	 state = NORMAL
+	 detail = "menu"
+     shaped = TRUE
+      }
+    # Don't paint anything (extra) as the scroll arrow background
+    image
+      {
+	function = BOX
+	detail   = "menu_scroll_arrow_up"
+      }
+    image {
+	function = BOX
+	detail   = "menu_scroll_arrow_down"
+      }
+    image
+      {
+        function        = ARROW
+	state           = ACTIVE
+	arrow_direction = UP
+	overlay_file    = "../images/qgn_plat_menu_scroll_up_arrow_pressed.png"
+	overlay_stretch = FALSE
+      }
+    image
+      {
+        function        = ARROW
+	state           = INSENSITIVE
+	arrow_direction = UP
+	overlay_file    = "../images/qgn_plat_menu_scroll_up_arrow_disabled.png"
+	overlay_stretch = FALSE
+      }
+    image
+      {
+        function        = ARROW
+	arrow_direction = UP
+	overlay_file    = "../images/qgn_plat_menu_scroll_up_arrow_normal.png"
+	overlay_stretch = FALSE
+      }
+    image
+      {
+        function        = ARROW
+	state           = ACTIVE
+	arrow_direction = DOWN
+	overlay_file    = "../images/qgn_plat_menu_scroll_down_arrow_pressed.png"
+	overlay_stretch = FALSE
+      }
+    image
+      {
+        function        = ARROW
+	state           = INSENSITIVE
+	arrow_direction = DOWN
+	overlay_file    = "../images/qgn_plat_menu_scroll_down_arrow_disabled.png"
+	overlay_stretch = FALSE
+      }
+    image
+      {
+        function        = ARROW
+	arrow_direction = DOWN
+	overlay_file    = "../images/qgn_plat_menu_scroll_down_arrow_normal.png"
+	overlay_stretch = FALSE
+      }
+   }
+}
+
+style "osso-menu-with-corners" {
+
+   engine "sapwood" {
+      image {
+	  function = BOX
+	  state = NORMAL
+	  detail = "menu"
+	  file = "../images/qgn_plat_application_menu_1st_level_frame.png"
+	  border = { 20, 20, 20, 20 }
+      shaped = TRUE
+      }
+   }
+}
+
+style "osso-menu-without-corners" {
+
+   engine "sapwood" {
+      image {
+	 function = BOX
+	 state = NORMAL
+	 detail = "menu"
+     shaped = TRUE
+      }
+   }
+}
+
+class "GtkMenu" style "osso-menu"
+widget "*.menu_with_corners" style "osso-menu-with-corners"
+widget "*.menu_without_corners" style "osso-menu-without-corners"
+widget "*.menu_force_with_corners" style "osso-menu-with-corners"
+widget "*.menu_force_without_corners" style "osso-menu-without-corners"
+widget "*.menu_without_corners_first_level" style "osso-menu-without-corners"
+widget "*.menu_combobox" style "osso-menu-without-corners"
+

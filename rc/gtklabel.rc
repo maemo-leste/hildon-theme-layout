@@ -1,0 +1,24 @@
+# Copyright Nokia Corporation 2009
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+style "fremantle-shadow-label" = "osso-color-themeing"
+{
+	engine "sapwood"
+	{
+		shadowcolor = @ReversedTextColor
+	}
+}
+widget "*.hildon-shadow-label" style "fremantle-shadow-label"
+class "GtkAccelLabel" style "fremantle-shadow-label"
+
+style "fremantle-shadow-label-reversed" = "osso-color-themeing"
+{
+	fg[NORMAL] = @ReversedTextColor
+	fg[INSENSITIVE] = @ReversedDisabledTextColor
+
+	engine "sapwood"
+	{
+		shadowcolor = @DefaultTextColor
+	}
+}
+widget "*.hildon-shadow-label-reversed" style "fremantle-shadow-label-reversed"

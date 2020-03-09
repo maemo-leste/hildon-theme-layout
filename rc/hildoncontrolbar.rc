@@ -1,0 +1,87 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+#################################################### 
+# HILDON CONTROLBAR
+# 
+# Theming instructions for HildonControlbar -widget
+#
+#################################################### 
+
+style "osso-controlbar"
+{
+	HildonControlbar::stepper_size = 0
+	HildonControlbar::slider_width = 40
+	HildonControlbar::stepper_spacing = 0
+	HildonControlbar::trough_border = 0
+	GtkScale::slider_length = 60
+	HildonControlbar::autodimmed_steppers = 1
+	HildonControlbar::inner_border_width = 0
+	GtkWidget::focus-line-width = 0
+	GtkWidget::focus-padding = 0
+	GtkRange::draw_trough_under_steppers = 0
+
+	engine "sapwood" {
+		#
+		# At first, lets override some gtkrange specific things
+		#
+		image {
+			function = BOX
+			detail = "stepper"
+		}
+		#image {
+		#	function = SLIDER
+		#}
+
+		#
+		# Then, lets define our osso specific things
+		#
+		
+		# Controlbar frame borders
+			image {
+			function = BOX
+			detail = "trough"
+			state = INSENSITIVE
+			}
+			image {
+			function = BOX
+			detail = "trough"
+		}
+		image {
+			function = SLIDER
+			}
+		
+		# Controlbar blocks
+		image {
+			function = BOX
+			shadow = IN
+			detail = "hildon_block"
+			state = INSENSITIVE
+			file = "../images/ControlBarActiveDisabled.png"
+			border = { 7, 7, 29, 29 }
+		}
+		image {
+			function = BOX
+			shadow = IN
+			detail = "hildon_block"
+			file = "../images/ControlBarActive.png"
+			border = { 7, 7, 29, 29 }
+		}
+		image {
+			function = BOX
+			shadow = OUT
+			detail = "hildon_block"
+			state = INSENSITIVE
+			file = "../images/ControlBarPassiveDisabled.png"
+			border = { 7, 7, 29, 29 }
+		}
+		image {
+			function = BOX
+			shadow = OUT
+			detail = "hildon_block"
+			file = "../images/ControlBarPassive.png"
+			border = { 7, 7, 29, 29 }
+		}
+	}
+}
+class "HildonControlbar" style "osso-controlbar"

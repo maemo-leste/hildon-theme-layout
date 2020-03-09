@@ -1,0 +1,64 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "fremantle-frame"
+{
+	xthickness = 0
+	ythickness = 0
+
+	engine "sapwood"
+	{
+		image
+		{
+		function = SHADOW
+		}
+		image
+		{
+			function = SHADOW_GAP
+		}
+		image
+		{
+			function = BOX
+			detail = "frame-label"
+			file = "../images/GroupTitle.png"
+			border = { 10, 10, 0, 0 }
+		}
+		image
+		{
+			function = BOX
+			detail = "frame-label-background"
+			file = "../images/GroupTitleBackground.png"
+			border = { 10, 10, 0, 0 }
+		}
+	}
+}
+class "GtkFrame" style "fremantle-frame"
+
+style "fremantle-frame-label" = "osso-color-themeing"
+{
+	fg[NORMAL] = @SecondaryTextColor
+	
+	# EmpSmallSystemFont
+	#font_name = "Nokia Sans Bold 13"
+	
+	engine "sapwood"
+	{
+		shadowcolor=@ReversedTextColor
+	}
+}
+widget_class "*.GtkFrame.GtkLabel" style "fremantle-frame-label"
+
+
+style "fremantle-framed-window"
+{
+	engine "sapwood"
+	{
+		image
+		{
+			function = FLAT_BOX
+			file     = "../images/wmFrame.png"
+			border   = { 3, 3, 3, 3 }
+		}
+	}
+}
+widget "hildon-framed-window" style "fremantle-framed-window"

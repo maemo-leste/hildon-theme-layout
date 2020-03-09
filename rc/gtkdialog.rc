@@ -1,0 +1,12 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-dialog" {
+  GtkContainer::border-width = 0
+  GtkDialog::button-spacing = 0
+  GtkDialog::content-area-border = 0
+  GtkDialog::action-area-border = 0
+  GtkDialog::inner-spacing = 16
+  GtkDialog::padding = {16, 16, 0, 8}
+}
+class "GtkDialog" style "osso-dialog"

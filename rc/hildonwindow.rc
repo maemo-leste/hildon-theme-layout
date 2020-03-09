@@ -1,0 +1,42 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+#################################################### 
+# OSSO app pictures
+#################################################### 
+
+style "fremantle-app-menu" {
+	HildonAppMenu::vertical-spacing = 0
+	HildonAppMenu::horizontal-spacing = 0
+	HildonAppMenu::inner-border = 0
+	HildonAppMenu::external-border = 52
+}
+class "HildonAppMenu" style "fremantle-app-menu"
+class "HDStatusMenu" style "fremantle-app-menu"
+class "SuiPowerkeyMenu" style "fremantle-app-menu"
+
+style "osso-window-background" {
+	HildonAppview::border-width = 0
+	HildonWindow::borders = { 0, 0, 0, 0 }
+	HildonWindow::toolbar-borders = { 0, 0, 0, 0 }
+	
+	engine "sapwood" {
+		image {
+			function = BOX
+			state = NORMAL
+			detail = "toolbar-primary"
+			file = "../images/ToolbarPrimaryBackground.png"
+		}
+		image {
+			function = BOX
+			detail = "toolbar-secondary"
+			file = "../images/ToolbarSecondaryBackground.png"
+		}
+		image {
+			function = BOX
+			detail = "toolbar-edit-mode"
+			file = "../images/wmTitleBar.png"
+		}
+	}
+}
+class "HildonWindow" style "osso-window-background"

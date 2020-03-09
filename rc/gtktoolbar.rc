@@ -1,0 +1,105 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+# Special theming for the edit mode toolbar back button and action buttons
+
+style "edit-mode-toolbar"
+{
+	HildonEditToolbar::arrow-width  = 112
+	HildonEditToolbar::arrow-height = 56
+	
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file = "../images/wmTitleBar.png"
+		}
+	}
+}
+class "HildonEditToolbar" style "edit-mode-toolbar"
+
+style "edit-toolbar-arrow"
+{
+	engine "sapwood" {
+		image {
+			function       = BOX
+			shadow         = IN
+			file           = "../images/wmRightButtonPressed.png"
+			overlay_file   = "../images/wmBackIconPressed.png"
+		}
+		image {
+			function       = BOX
+			#file           = "../images/wmRightButton.png"
+			overlay_file   = "../images/wmBackIcon.png"
+		}
+	}
+}
+widget "*.hildon-edit-toolbar-arrow" style "edit-toolbar-arrow"
+
+style "edit-toolbar-button"
+{
+	engine "sapwood" {
+		image {
+			function = BOX
+			shadow = IN
+			file = "../images/wmEditModeButtonPressed.png"
+			border = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			state = INSENSITIVE
+			file = "../images/wmEditModeButtonDisabled.png"
+			border = { 16, 16, 0, 0 }
+		}
+		image {
+			function = BOX
+			file = "../images/wmEditModeButtonNormal.png"
+			border = { 16, 16, 0, 0 }
+		}
+	}
+}
+# FIXME: This is not very efficient, but the only way to catch all buttons packed in an EditToolbar. Can't risk a regression...
+widget_class "*.<HildonEditToolbar>.*<GtkButton>" style "edit-toolbar-button"
+
+#################################################### 
+# GTK TOOLBAR
+#
+#################################################### 
+
+style "osso-toolbar"
+{
+  GtkToolbar::button-relief = GTK_RELIEF_NORMAL
+  GtkToolbar::shadow-type = GTK_SHADOW_NONE
+  GtkToolbar::max-child-expand = 800
+  GtkToolbar::space-size = 15
+  engine "sapwood"
+  {
+    image
+    {
+      function = BOX
+    }
+  }
+}
+class "GtkToolbar" style "osso-toolbar"
+
+style "osso-toolbar-separator"
+{
+	GtkWidget::separator-width = 15
+	GtkWidget::wide-separators = 1
+	engine "sapwood"
+	{	
+
+		image{
+			function = BOX
+			shadow = ETCHED_OUT
+			detail = "vseparator"
+			file = "../images/qgn_plat_toolbar_separator.png"
+		}
+		image{
+			function = BOX
+			shadow = ETCHED_OUT
+			detail = "hseparator"
+			file = "../images/qgn_plat_toolbar_separator.png"
+		}
+	}
+}
+class "GtkSeparatorToolItem" style "osso-toolbar-separator"

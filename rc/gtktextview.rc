@@ -1,0 +1,128 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-textview" = "osso-color-themeing"
+{
+	GtkWidget::interior-focus = 0
+	GtkWidget::focus_line_width = 5
+
+	text[NORMAL] = @ReversedTextColor
+	text[INSENSITIVE] = @ReversedDisabledTextColor
+	base[NORMAL] = @ReversedBackgroundColor
+}
+class "GtkTextView" style "osso-textview"
+
+style "fremantle-textview" = "osso-color-themeing"
+{
+	GtkWidget::focus-line-width = 18
+	GtkWidget::interior-focus = 0
+	GtkWidget::hildon-mode = 1
+
+	text[NORMAL] = @ReversedTextColor
+	text[INSENSITIVE] = @ReversedDisabledTextColor
+	base[NORMAL] = @ReversedBackgroundColor
+
+	engine "sapwood"
+	{
+		image
+		{
+			function = FOCUS
+			detail   = "textview"
+			file     = "../images/TextInputFrameFocused.png"
+			border = { 18, 18, 18, 18 }
+		}
+		image
+		{
+			function = SHADOW
+			shadow   = OUT
+			state    = INSENSITIVE
+			detail   = "textview"
+			file     = "../images/TextInputFrameDisabled.png"
+			border = { 18, 18, 18, 18 }
+		}
+		image
+		{
+			function = SHADOW
+			shadow   = OUT
+			detail   = "textview"
+			file     = "../images/TextInputFrame.png"
+			border = { 18, 18, 18, 18 }
+		}
+	}
+}
+class "HildonTextView" style "fremantle-textview"
+
+# This is for SMS view and similar views that should have a dark background with horizontal text lines.
+style "fremantle-fullscreen-textview" = "osso-color-themeing"
+{
+	GtkWidget::focus-line-width = 0
+	GtkWidget::interior-focus = 0
+	GtkWidget::hildon-mode = 1
+	GtkTextView::custom-background = 1
+
+	# We change the logical colour because otherwise HildonTextview would overwrite our setting.
+	color["ReversedTextColor"] = @DefaultTextColor
+	color["ReversedDisabledTextColor"] = @DisabledTextColor
+	base[NORMAL] = @DefaultBackgroundColor
+
+	engine "sapwood" {
+		image {
+			function = FLAT_BOX
+			file = "TextInputBaseline.png"
+		}
+	}
+}
+widget "*.hildon-fullscreen-textview" style "fremantle-fullscreen-textview"
+
+# A textview that appears like a non-editable label. Should not be used for editable textviews.
+style "fremantle-readonly-textview" = "osso-color-themeing"
+{
+	GtkWidget::focus-line-width = 0
+	GtkWidget::interior-focus = 0
+	GtkWidget::hildon-mode = 1
+
+	# We change the logical colour because otherwise HildonTextview would overwrite our setting.
+	color["ReversedTextColor"] = @DefaultTextColor
+	color["ReversedDisabledTextColor"] = @DisabledTextColor
+	base[NORMAL] = @DefaultBackgroundColor
+}
+widget "*.hildon-readonly-textview" style "fremantle-readonly-textview"
+
+# A textview with a border and dark background, used mainly by call UI.
+style "fremantle-reversed-textview" = "osso-color-themeing"
+{
+	GtkWidget::focus-line-width = 12
+	GtkWidget::interior-focus = 0
+	GtkWidget::hildon-mode = 1
+
+	# We change the logical colour because otherwise HildonTextview would overwrite our setting.
+	color["ReversedTextColor"] = @DefaultTextColor
+	color["ReversedDisabledTextColor"] = @DisabledTextColor
+	base[NORMAL] = @DarkerBackgroundColor
+
+	engine "sapwood"
+	{
+		image
+		{
+			function = FOCUS
+			detail   = "textview"
+			file     = "../images/CallEntry.png"
+			border = { 16, 16, 16, 16 }
+		}
+		image
+		{
+			function = SHADOW
+			shadow   = OUT
+			detail   = "textview"
+			file     = "../images/CallEntry.png"
+			border   = { 16, 16, 16, 16 }
+		}
+
+		image {
+			function = SHADOW
+			file     = "../images/CallEntry.png"
+			border   = { 16, 16, 16, 16 }
+		}
+	}
+}
+widget "*.hildon-reversed-textview" style "fremantle-reversed-textview"

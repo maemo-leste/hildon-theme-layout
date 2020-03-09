@@ -1,0 +1,37 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license
+
+class "GtkWidget" style "osso-logical-colors"
+
+style "osso-color-themeing" = "osso-logical-colors" {
+  fg[NORMAL] = @DefaultTextColor
+  bg[NORMAL] = @DefaultBackgroundColor
+
+  fg[PRELIGHT] = @DefaultTextColor
+  bg[PRELIGHT] = @DefaultBackgroundColor
+
+  fg[ACTIVE] = @DefaultTextColor
+  bg[ACTIVE] = @SelectionColor
+                                                                                                                                    
+  fg[SELECTED] = @DefaultTextColor
+  bg[SELECTED] = @SelectionColor
+                                                                                                                                     
+  fg[INSENSITIVE] = @DisabledTextColor
+  bg[INSENSITIVE] = @DefaultBackgroundColor
+                                                                                                                                     
+  text[NORMAL] = @DefaultTextColor
+  base[NORMAL] = @DefaultBackgroundColor
+                                                                                                                                     
+  text[PRELIGHT] = @DefaultTextColor
+  base[PRELIGHT] = @DefaultBackgroundColor
+                                                                                                                                     
+  text[ACTIVE] = @PaintedTextColor
+  base[ACTIVE] = @ReversedSelectionColor
+
+  text[SELECTED] = @PaintedTextColor
+  base[SELECTED] = @ReversedSelectionColor
+                                                                                                                                    
+  text[INSENSITIVE] = @DisabledTextColor
+  base[INSENSITIVE] = @DefaultBackgroundColor
+}
+class "GtkWidget" style "osso-color-themeing"

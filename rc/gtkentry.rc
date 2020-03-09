@@ -1,0 +1,128 @@
+# Copyright Nokia Corporation 2007
+# Licensed under Creative Commons Attribution-ShareAlike 2.5 license 
+
+style "osso-entry" = "osso-color-themeing" {
+	xthickness = 4
+	ythickness = 0
+
+	GtkWidget::interior-focus = 1
+	GtkEntry::inner-border = { 4, 4, 4, 4 }
+	GtkEntry::state-hint = 1
+
+	text[NORMAL] = @ReversedTextColor
+	text[INSENSITIVE] = @ReversedDisabledTextColor
+
+	engine "sapwood" {
+		image {
+			function = SHADOW
+			state = INSENSITIVE
+			file = "../images/single_line_input_frame_disabled.png"
+			border = { 5, 5, 5, 5 }
+		}
+		image {
+			function = SHADOW
+			state = ACTIVE
+			file = "../images/single_line_input_frame_focused.png"
+			border = { 5, 5, 5, 5 }
+		}
+		image {
+			function = SHADOW
+			state = NORMAL
+			file = "../images/single_line_input_frame.png"
+			border = { 5, 5, 5, 5 }
+		}
+	
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = INSENSITIVE
+			file = "../images/single_line_input_disabled.png"
+			border = { 1, 1, 5, 5 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = ACTIVE
+			file = "../images/single_line_input_focused.png"
+			border = { 1, 1, 5, 5 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = NORMAL
+			file = "../images/single_line_input.png"
+			border = { 1, 1, 5, 5 }
+		}
+	}
+}
+class "GtkEntry" style "osso-entry"
+
+style "fremantle-entry" = "osso-color-themeing" {  
+	xthickness = 16
+	ythickness = 0
+
+	GtkWidget::interior-focus = 1
+	GtkEntry::inner-border = { 0, 0, 16, 16 }
+	GtkEntry::state-hint = 1
+
+	text[NORMAL] = @ReversedTextColor
+	text[INSENSITIVE] = @ReversedDisabledTextColor
+
+	engine "sapwood" {
+		image {
+			function = SHADOW
+			state = INSENSITIVE
+			file = "../images/TextInputFrameDisabled.png"
+			border = { 18, 18, 18, 18 }
+		}
+		image {
+			function = SHADOW
+			state = ACTIVE
+			file = "../images/TextInputFrameFocused.png"
+			border = { 18, 18, 18, 18 }
+		}
+		image {
+			function = SHADOW
+			state = NORMAL
+			file = "../images/TextInputFrame.png"
+			border = { 18, 18, 18, 18 }
+		}
+
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = INSENSITIVE
+			file = "../images/TextInputDisabled.png"
+			border = { 12, 12, 18, 18 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = ACTIVE
+			file = "../images/TextInputFocused.png"
+			border = { 12, 12, 18, 18 }
+		}
+		image {
+			function = FLAT_BOX
+			shadow = NONE
+			state = NORMAL
+			file = "../images/TextInput.png"
+			border = { 12, 12, 18, 18 }
+		}
+		image
+		{
+			function = BOX
+			detail = "entry-progress"
+			file = "../images/TextInputProgress.png"
+			border = { 12, 12, 18, 18 }
+		}
+	}
+}
+class "HildonEntry" style "fremantle-entry"
+
+style "placeholder-text" = "fremantle-entry" {
+	text[NORMAL] = @ReversedSecondaryTextColor
+}
+widget "*.hildon-entry-placeholder" style "placeholder-text"
+
+

@@ -1,0 +1,413 @@
+hildon-theme-layout-5 (0.15.0-1+0m5) unstable; urgency=low
+
+  * This entry has been added by BIFH queue processor
+    Suffix +0m5 added to package revision
+
+ -- Urho Konttori <urho.konttori@nokia.com>  Wed, 17 Feb 2010 13:36:10 +0200
+
+hildon-theme-layout-5 (0.15.0-1) unstable; urgency=low
+
+  * Added Email widget coordinates.
+  * Added changed for rounded menu borders. See NB#137235.
+  * Add themeing rule for portrait notifications. Fixes NB#151433.
+  * Better matching for button text colors. Fixes NB#150051.
+  * Added disabled state to browser UI combobox for Qt style.
+    Fixes: NB#154476 - combobox disabled state gtkrc entry missing.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 29 Jan 2010 20:00:00 +0200
+
+hildon-theme-layout-5 (0.14.0-1) unstable; urgency=low
+
+  * Added edit mode toolbar buttons. See NB#144793.
+  * New images for VKB themeing, remove old VKB themeing rules. See NB#144903.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 17 Nov 2009 12:55:00 +0200
+
+hildon-theme-layout-5 (0.13.2-1) unstable; urgency=low
+
+  * Disable mnemonics globally. Fixes: NB#137179.
+  * Add gtk-icon-theme-name to GtkRC. Fixes: NB#137471.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 09 Oct 2009 16:33:00 +0200
+
+hildon-theme-layout-5 (0.13.1-1) unstable; urgency=low
+
+  * Split RSS widget button into three parts, for NB#141916.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Wed, 16 Sep 2009 19:30:00 +0200
+
+hildon-theme-layout-5 (0.13.0-1) unstable; urgency=low
+
+  * Add Ovi widget coordinates, updated RSS widget coordinates. See: NB#125660. Fixes: NB#126430.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Wed, 16 Sep 2009 19:30:00 +0200
+
+hildon-theme-layout-5 (0.12.4-1) unstable; urgency=low
+
+  * Add wmMenuIndicator.png. See: NB#137793.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Mon, 14 Sep 2009 20:05:00 +0200
+
+hildon-theme-layout-5 (0.12.3-1) unstable; urgency=low
+
+  * Add rules for portrait mode unlock slider. See: NB#136719.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 03 Sep 2009 12:55:00 +0200
+
+hildon-theme-layout-5 (0.12.2-1) unstable; urgency=low
+
+  * Reduce width of TouchListBackground graphics. Fixes: NB#130150.
+  * Add AlphaKeyColor. See: NB#133451.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 18 Aug 2009 17:00:00 +0200
+
+hildon-theme-layout-5 (0.12.1-1) unstable; urgency=low
+
+  * Remove shadows from list- and button-labels. Fixes: NB#129233.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 30 Jul 2009 16:36:00 +0200
+
+hildon-theme-layout-5 (0.12.0-1) unstable; urgency=low
+
+  * Update calendar widget coordinates. See: NB#128469.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 28 Jul 2009 17:58:00 +0200
+
+hildon-theme-layout-5 (0.11.1-1) unstable; urgency=low
+
+  * Add HomeSystemFont. Fixes: NB#129004.
+  * Use correct CSS naming for fonts. Fixes: NB#116748.
+  * Make group titles bold. Fixes: NB#108333.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 23 Jul 2009 01:27:00 +0200
+
+hildon-theme-layout-5 (0.11.0-1) unstable; urgency=low
+
+  * New coordinates for location widget, see NB#126026.
+  * Cut one additional piece of the reverted text input field, required for NB#124746.
+  * New calendar coordinates for NB#124345.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 09 Jul 2009 12:04:00 +0200
+
+hildon-theme-layout-5 (0.10.20-1) unstable; urgency=low
+
+  * Add application shortcut applet graphics.
+  * Add accented button. Fixes: NB#122803.
+  * Add new coordinates for portrait mode banners. Fixes: NB#118401.
+  * Cleanup and optimisations. Fixes: NB#118090.
+  * Fix a matching error for hildon windows. Fixes: NB#116259.
+  * No special themeing for treeview sides anymore. Fixes: NB#118364.
+  * Taskswitcher updates. Fixes: NB#123202.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 18 Jun 2009 14:13:00 +0200
+
+hildon-theme-layout-5 (0.10.19-1) unstable; urgency=low
+
+  * Cut coordinates and themeing rules for new lock slider layout.
+  * Better TextView spacing, support baselines for sms view. Fixes: NB#119284.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Mon, 11 May 2009 18:30:00 +0200
+
+hildon-theme-layout-5 (0.10.18-1) unstable; urgency=low
+
+  * Separated Input Method GtkRC.
+  * Border margins of buttons work better with dithering now.
+  * Minor performance tweaks.
+  * Adjust separator size and borders to fix scaling issues.
+  * Actually use ReversedSelectionColor. Fixes: NB#118147.
+  * Create colors.config.
+  * Also export wmProgressIndicator to eight different pieces.
+  * Add matching for framed windows.
+  * Add notification colors.
+  * Update incoming event to newest spec.
+  * Add three new font sizes (X-LargeSystemFont to XXX-LargeSystemFont). Fixes: NB#119085.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 10 Jun 2009 18:30:00 +0200
+ 
+hildon-theme-layout-5 (0.10.17-1) unstable; urgency=low
+
+  * Update matchbox-1 dialog style (used for the pin-code entry) to match hildon-desktop dialogs.
+  * Match touch selector cells more specifically to avoid background themeing. Fixes: NB#110837.
+  * Set horizontal padding to HILDON_MARGIN_DOUBLE to line up with title text 
+    (once legacy app menus are positions correctly, see NB#111652).
+  * Set gtk-double-click-time and -distance. Fixes: NB#113353.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Mon, 11 May 2009 18:30:00 +0200
+
+hildon-theme-layout-5 (0.10.15-1) unstable; urgency=low
+
+  * Tweak vertical button spacing. Fixes: NB#114019.
+  * Match GtkImageMenuItem. Fixes: NB#113698.
+  * Also match browser combobox entry with old box themeing rule. Fixes: NB#103340.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Thu, 20 Apr 2009 17:07:00 +0200
+
+hildon-theme-layout-5 (0.10.14-1) unstable; urgency=low
+
+  * Use better window frames. Fixes: NB#110881.
+  * Remove deprecated edit toolbar background graphic.
+  * New notification theme images (not yet used and subject to change again).
+  * Add custom dialog button themeings (requires a change to Gtk to work).
+  * Changed dialog margins (dialogs won't have margins now until a patch to Gtk is integrated).
+  * Properly theme confirmation notes created with new_confirmation_add_buttons().
+  * Theme all Hildon Banners. Fixes: NB#111208.
+  * Add custom Lock slider. Fixes: NB#111539.
+  * Fix some call-ui dimensions. Fixes: NB#109181.
+  * Improved margins and highlight for menus.
+  * Added text shadows to menu labels.
+  * Use RoundedSelection graphic for icon view highlights (e.g. control panel).
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 24 Apr 2009 19:07:00 +0200
+
+hildon-theme-layout-5 (0.10.13-1) unstable; urgency=low
+
+  * Add .MessagingAvatarBorderMaskColor. Fixes: NB#110148.
+  * Call-UI additions. Fixes: NB#109181.
+  * Use ButtonPressedColor again on pressed buttons.
+  * Support disabled checkmarks. See: NB#95718.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 08 Apr 2009 10:23:00 +0200
+
+hildon-theme-layout-5 (0.10.12-1) unstable; urgency=low
+
+  * Set gtk-theme-name. Fixes: NB#93010.
+  * Remove deprecated WindowManagerStuff.png image.
+  * Add coordinates for white sparkles graphic (related to bug #94184).
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 02 Apr 2009 17:15:00 +0200
+
+hildon-theme-layout-5 (0.10.11-1) unstable; urgency=low
+
+  * Tweaked button margins.
+  * Edit toolbar background themeing for manually packed edit toolbars (requires a change in hildon-widgets).
+  * Match GtkCheckButton subclasses.
+  * Added preliminary call ui coordinates.
+  * Added icon highlight coordinates.
+  * Added coordinates for calendar/contact applet active states.
+  * Fix normal vertical separator themeing.
+  * Added hildon-shadow-label and hildon-shadow-label-reversed themeing.
+  * Support for group title themeing (requires a change in Gtk+ to work correctly)
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 27 Mar 2009 11:03:00 +0200
+
+hildon-theme-layout-5 (0.10.10-1) unstable; urgency=low
+
+  * Added browser UI combo box theme elements.
+  * Don't use pixmap engine anymore. Fixes: NB#101788
+  * Add messaging UI specific colours and update font size definitions. Fixes: NB#94101
+  * New cut coordinates for view menu to not have a top border.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 20 Mar 2009 12:35:00 +0200
+
+hildon-theme-layout-5 (0.10.9-1) unstable; urgency=low
+
+  * Add WindowManagerStuff.png back for now until issues in hildon desktop are fixed.
+  * Theme status menu background themeing (not visible until status menu layout is fixed).
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 17 Mar 2009 18:16:00 +0200
+
+hildon-theme-layout-5 (0.10.8-1) unstable; urgency=low
+
+  * Custom themeing for fullscreen textview (SMS view). Fixes: NB#105627
+  * Added cutting coordinates for new taskswitcher graphics.
+  * Add custom themeing rule for widgets named "small-progress-bar".
+  * Added coordinates and themeing rules for bidirectional sliders.
+  * Disabled cursor blinking. Fixes: NB#105901
+  * Use ReversedDisabledTextColor for disabled entries.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 16 Mar 2009 10:23:00 +0200
+
+hildon-theme-layout-5 (0.10.7-1) unstable; urgency=low
+
+  * Adjust focus line width. Fixes: NB#103626
+  * Set correct icon size for legacy toolbars. Fixes: NB#102881
+  * Add SCV button graphics and themeing rules. Fixes: NB#104142
+  * Added background themeing for application menu.
+  * Adjusted application menu spacings. Fixes: NB#104376
+  * Changed dialog titlebars height to 48px as per the new specs.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 06 Mar 2009 19:51:00 +0200
+
+hildon-theme-layout-5 (0.10.6-1) unstable; urgency=low
+
+  * Fix theming issues for legacy comboboxes. Fixes: NB#103259
+  * Add tutorial applet graphic (not used yet).
+  * Fix an oversight which made buttons use the wrong theme engine.
+  * Implement information note, -banner, and confirmation note theming. Fixes: NB#98597
+  * Fix some issues with input method theming. Fixes: NB#101515, NB#90598
+  * Match button boxes to view menu buttons. Fixes: NB#98144
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 27 Feb 2009 17:24:00 +0200
+
+hildon-theme-layout-5 (0.10.4-1) unstable; urgency=low
+
+  * Added applet close and configure button.
+  * Better tiling to support dithering.
+  * New edit toolbar theming.
+  * Basic information banner theming.
+  * fonts.css and colors.css merged into colors.css.
+  * Additional cut coordinates to support new menu button theming.
+  * Simplify and remove active state of checkbutton/radiobutton. See: NB#100739
+  * Tweaked button image spacing.
+  * Improved notebook tab coordinates, fixing a scaling issue.
+  * Added color config file for startup-wizard.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 23 Feb 2009 12:10:00 +0200
+
+hildon-theme-layout-5 (0.10.3-1) unstable; urgency=low
+
+  * Fixed a minor visual glitch with default buttons. 
+  * Added rounded selection images (e.g. tag cloud).
+  * Added progress indicator.
+  * Added matchbox-1 theme.
+  * Some border size fixes for dialogs.
+  * Support vertical GtkScales.
+  * Fixed a visual glitch in HildonControlbar.
+  * Added applet theming.
+  * Support new titlebar theming.
+  * Added fonts.css file.
+  * Added edit mode toolbar back button theme rule.
+  * Removed focus indicator from treeview. Fixes: NB#94642 
+  * Fixed treeview row height.
+  * Added separate titlebar image for taskswitcher thumbnails.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Tue, 10 Feb 2009 10:51:00 +0200
+
+hildon-theme-layout-5 (0.10.2-1) unstable; urgency=low
+
+  * Added web shortcut background.
+  * Improved virtual keyboard button text colours.
+  * Fixed warnings.
+  * Export window manager theme into individual slices (wm*).
+  * Removed toolbar padding.
+  * CheckButton graphic updated.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 16 Dec 2008 15:35:00 +0200
+
+hildon-theme-layout-5 (0.10.1-1) unstable; urgency=low
+
+  * Back button theming for window manager.
+  * New seekbar, volumebar, controlbar, gtkscale theming. Fixes: NB#88817,
+    NB#91107
+  * Text shadows on all buttons and touch lists.
+  * Correct new progressbar size. Fixes: NB#88817
+  * Fixed theming for new hildon textview and legacy textview.
+  * Fix an issue with the colour of insensitive checkbuttons. Fixes: NB#92888
+  * Added style for new entry progress indicator.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 09 Dec 2008 16:47:00 +0200
+
+hildon-theme-layout-5 (0.10.0-2) unstable; urgency=low
+
+  * Disable style-hint for GtkEntry, so it can be integrated with old Gtk.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 24 Nov 2008 14:37:00 +0200
+
+hildon-theme-layout-5 (0.10.0-1) unstable; urgency=low
+
+  * Taller contacts bubble.
+  * Add closing comment for header description. Fixes: NB#92421
+  * Add pixmap_patch. Fixes: NB#91956
+  * Experimental addition of text shadows to button titles.
+  * Improvements to button inside paddings.
+  * New matchbox theme.xml.
+  * Added rounded rectangle graphic with selection colour for tag cloud and similar cases.
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 21 Nov 2008 13:53:00 +0200
+
+hildon-theme-layout-5 (0.9.0-1) unstable; urgency=low
+
+  * Set correct hildon-mode for touchlist/touchgrid. Fixes: NB#91954
+  * Add hildon-desktop specific styles.
+  * Better multi-column treeview rendering. 
+  * Graphics for contact home applet.
+  * Font size fixes. Fixes: NB#89745 
+
+ -- Daniel Borgmann <danielb@openismus.com>  Fri, 07 Nov 2008 14:55:00 +0200
+
+hildon-theme-layout-5 (0.8.0-1) unstable; urgency=low
+
+  * Styled Hildon Context Menu.
+  * Removed unused legacy graphics.
+  * Toolbar background revamps.
+  * ComboBox improvements and fixes.
+  * Removed orphans and warnings.
+  * New graphics for seekbar and progressbar.
+  * Added style rules for new font definitions.
+  * Added styling for ToggleButton groups.
+  * GtkEntry improvements.
+  * Added (not used yet) RC bits for the GtkScale.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Fri, 31 Oct 2008 10:11:23 +0200
+
+hildon-theme-layout-5 (0.7.0-1) unstable; urgency=low
+
+  * Fix button spacing in GtkDialogs.
+  * New combobox style.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Thu, 16 Oct 2008 17:40:26 +0300
+
+hildon-theme-layout-5 (0.6.0-1) unstable; urgency=low
+
+  * Removed startup wizard stuff, moved out of the package.
+  * New CSS file template with logical color definitions for web applications.
+  * GtkEntry theming improved.
+  * Font sizes updated to Fremantle size.
+  * GtkComboBox/GtkComboBoxEntry theming improved.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Wed, 08 Oct 2008 14:34:07 +0300
+
+hildon-theme-layout-5 (0.5.0-1) unstable; urgency=low
+
+  * Themed value label in HildonButton.
+  * Initial theming of GtkComboBox/GtkComboBoxEntry.
+  * Initial theming of GtkTextView.
+  * Color palette revamped.
+  * Use GtkTreeView::row-height to set row height in Hildon Touch List.
+  * Themed placeholder text in HildonEntry and HildonTextView.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Mon, 22 Sep 2008 16:04:54 +0300
+
+hildon-theme-layout-5 (0.4.0-1) unstable; urgency=low
+
+  * Added mapping for Hildon Touch List and Hildon Touch Entry.
+  * Added layout information for the Hildon Confirmation Note.
+  * Bumped minor version, new stuff added to the layout.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Mon, 08 Sep 2008 16:55:04 +0300
+
+hildon-theme-layout-5 (0.3.0-1) unstable; urgency=low
+
+  * Bumped version, new stuff added to the layout.
+
+ -- Claudio Saavedra <csaavedra@igalia.com>  Wed, 27 Aug 2008 11:22:02 +0300
+
+hildon-theme-layout-5 (0.2.0-1) unstable; urgency=low
+
+  * Bumped version, new things added for framework
+
+ -- Tuomas Kuosmanen <tuomas.kuosmanen@nokia.com>  Mon, 25 Aug 2008 11:03:22 +0300
+
+hildon-theme-layout-5 (0.1.0-1) unstable; urgency=low
+
+  * Bumped version
+
+ -- Tuomas Kuosmanen <tuomas.kuosmanen@nokia.com>  Thu, 07 Aug 2008 13:16:34 +0300
+
+hildon-theme-layout-5 (0.1.0-2) unstable; urgency=low
+
+  * data/layout.txt: added bunch of h2.2 stuff
+  * rc/themespecificgtk.rc: added new colors for reversed
+    text and background
+  * data/layout.txt: added some first h2.2 widget graphics
+  * data/layout.txt: template is now 10000 pixels wide to make room
+    for new things..
+
+ -- Karl Lattimer <karl.lattimer@nokia.com>  Tue, 03 Jul 2008 14:59:00 +0300
+
+hildon-theme-layout-5 (0.1.0-1) unstable; urgency=low
+
+  * Uusi vuosi, uudet kujeet. Layout-5
+  * Imported new coordinates.
+
+ -- Tuomas Kuosmanen <tuomas.kuosmanen@nokia.com>  Wed, 28 May 2008 10:27:26 +0300

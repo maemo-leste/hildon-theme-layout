@@ -1,0 +1,215 @@
+/*
+This file contains CSS definitions for all the Maemo desktop theme colors and fonts.
+Theme Name   : @THEME_NAME@
+Installed in : @CSS_FULL_DIR@
+*/
+
+/* COLORS */
+
+/* Normal Text Colors */
+.DefaultTextColor {
+  color: @DefaultTextColor@;
+}
+.SecondaryTextColor {
+  color: @SecondaryTextColor@;
+}
+.ActiveTextColor {
+  color: @ActiveTextColor@;
+}
+.DisabledTextColor {
+  color: @DisabledTextColor@;
+}
+.PaintedTextColor {
+  color: @PaintedTextColor@;
+}
+
+/* Reversed Text Colors */
+.ReversedTextColor {
+  color: @ReversedTextColor@;
+}
+.ReversedSecondaryTextColor {
+  color: @ReversedSecondaryTextColor@;
+}
+.ReversedActiveTextColor {
+  color: @ReversedActiveTextColor@;
+}
+.ReversedDisabledTextColor {
+  color: @ReversedDisabledTextColor@;
+}
+.ReversedPaintedTextColor {
+  color: @ReversedPaintedTextColor@;
+}
+
+/* Background colors */
+.DefaultBackgroundColor {
+  background: @DefaultBackgroundColor@;
+}
+.DarkerBackgroundColor {
+  background: @DarkerBackgroundColor@;
+}
+.ReversedBackgroundColor {
+  background: @ReversedBackgroundColor@;
+}
+
+/* Selections */
+.SelectionColor {
+  color: @SelectionColor@;
+}
+.ReversedSelectionColor {
+  color: @ReversedSelectionColor@;
+}
+
+/* Media colors */
+.ContentBackgroundColor {
+  background: @ContentBackgroundColor@;
+}
+.ContentFrameColor {
+  background: @ContentFrameColor@;
+}
+.ContentSelectionColor {
+  background: @ContentSelectionColor@;
+}
+
+/* Framework stuff */
+.TitleTextColor {
+  color: @TitleTextColor@;
+}
+.ButtonTextColor {
+  color: @ButtonTextColor@;
+}
+.ButtonTextPressedColor {
+  color: @ButtonTextPressedColor@;
+}
+.ButtonTextDisabledColor {
+  color: @ButtonTextDisabledColor@;
+}
+
+/* Crayons */
+.AccentColor1 {
+  color: @AccentColor1@;
+}
+
+.AccentColor2 {
+  color: @AccentColor2@;
+}
+
+.AccentColor3 {
+  color: @AccentColor3@;
+}
+
+.AttentionColor {
+  color: @AttentionColor@;
+}
+
+/* Notification Colors */
+.NotificationBackgroundColor {
+  color: @NotificationBackgroundColor@;
+}
+
+.NotificationTextColor {
+  color: @NotificationTextColor@;
+}
+
+.NotificationSecondaryTextColor {
+  color: @NotificationSecondaryTextColor@;
+}
+
+/* Messaging UI specific colours */
+.MessagingViewBackgroundColor {
+  background-color: @MessagingViewBackgroundColor@;
+}
+.MessagingBubbleSelfBackgroundColor {
+  background-color: @MessagingBubbleSelfBackgroundColor@;
+}
+.MessagingBubbleOtherBackgroundColor {
+  background-color: @MessagingBubbleOtherBackgroundColor@;
+}
+.MessagingBubbleClickedBackgroundColor {
+  background-color: @MessagingBubbleClickedBackgroundColor@;
+}
+.MessagingBubbleBorderColor {
+  border-color: @MessagingBubbleBorderColor@;
+}
+.MessagingAvatarBorderColor {
+  border-color: @MessagingAvatarBorderColor@;
+}
+.MessagingAvatarBorderMaskColor {
+  outline-color: @DefaultBackgroundColor@;
+}
+
+
+a:link {
+  color: @AccentColor1@;
+}
+
+
+/* FONTS */
+
+/* legacy */
+
+.osso-SystemFont {
+	font: 18px "Nokia Sans"
+}
+
+.osso-EmpSystemFont {
+	font: bold 18px "Nokia Sans"
+}
+
+.osso-LargeFont {
+	font: 26px "Nokia Sans"
+}
+
+.osso-SmallFont {
+	font: 13px "Nokia Sans"
+}
+
+.osso-HWRFont1 {
+  font: 52px "Nokia Sans"
+}
+
+.osso-HWRFont2 {
+  font: 38px "Nokia Sans"
+}
+
+.osso-TitleFont {
+	font: 18px "Nokia Sans"
+}
+
+.osso-ButtonFont {
+	font: 18px "Nokia Sans"
+}
+
+/* new fonts for fremantle */
+
+.SystemFont {
+	font: 24px "Nokia Sans"
+}
+
+.EmpSystemFont {
+	font: bold 24px "Nokia Sans"
+}
+
+.LargeSystemFont {
+	font: 35px "Nokia Sans"
+}
+
+.SmallSystemFont {
+	font: 18px "Nokia Sans"
+}
+
+.EmpSmallSystemFont {
+	font: bold 18px "Nokia Sans"
+}
+
+.X-LargeSystemFont {
+	font: 42px "Nokia Sans"
+}
+
+.XX-LargeSystemFont {
+	font: 70px "Nokia Sans"
+}
+
+.XXX-LargeSystemFont {
+	font: 100px "Nokia Sans"
+}
+
