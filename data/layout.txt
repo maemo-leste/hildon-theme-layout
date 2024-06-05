@@ -377,14 +377,17 @@ PortraitButtonNormal.png=7760,225,70,90
 PortraitButtonPressed.png=7840,225,70,90
 PortraitButtonDisabled.png=7920,225,70,90
 
+ButtonGroupHorizontalSingleNormal.png=8283,225,210;35,70
 ButtonGroupHorizontalLeftNormal.png=8283,225,70,70
 ButtonGroupHorizontalMiddleNormal.png=8353,225,70,70
 ButtonGroupHorizontalRightNormal.png=8423,225,70,70
 
+ButtonGroupHorizontalSinglePressed.png=8283,305,210;35,70
 ButtonGroupHorizontalLeftPressed.png=8283,305,70,70
 ButtonGroupHorizontalMiddlePressed.png=8353,305,70,70
 ButtonGroupHorizontalRightPressed.png=8423,305,70,70
 
+ButtonGroupHorizontalSingleDisabled.png=8283,385,210;35,70
 ButtonGroupHorizontalLeftDisabled.png=8283,385,70,70
 ButtonGroupHorizontalMiddleDisabled.png=8353,385,70,70
 ButtonGroupHorizontalRightDisabled.png=8423,385,70,70
