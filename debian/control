@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 4.0.0), pkg-config, hildon-theme-tools (>= 0.6.0)
 Standards-Version: 3.6.0
 
 Package: hildon-theme-layout-5
-Architecture: all
+Architecture: any
 Depends: hildon-theme-tools (>= 0.6.0)
 Description: A layout file for making themes for the maemo 5 platform
  This package contains tools that can help you create a theme for
